@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "blog/posts/test.html",
+    "href": "blog/posts/test.html",
+    "title": "My First Blog Post",
+    "section": "",
+    "text": "My First Blog Post\nWelcome to my first blog post! this is just a test."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Institutional Email: lwmayer [at] uci [dot] edu\nPersonal Email: willuk [at] vivaldi [dot] net\nLab Website: Modelling and Decision-making Lab\nPersonal Website: https://lukmayer.github.io\n\n\n\n\n\n\n\n\nUniversity of California, Irvine, Irvine, CA, USA\n\nThesis (preliminary title): “Computational modelling of inversion problems in human-AI interaction”\nAdvisor: Prof. Mark Steyvers\nFocus on Bayesian modelling of human problem-solving abilities and alignment of AI systems with human cognition\n\n\n\n\nUniversity of Warwick, Coventry, England, UK\n\nThesis: “Cognition-Inspired Heuristics Improve Machine-Learning Predictions in Multi-Attribute Multi-Alternative Choice”\nAdvisor: Prof. Nick Chater\nFocus on unifying models from computational cognitive science and machine learning\n\n\n\n\nUniversity of Stirling, Stirling, Scotland, UK\n\nThesis: “Cooperation does not improve selective and/or sustained attention”\nAdvisors: Dr. John Michael and Dr. Ross Goutcher\nFocus on measuring cognitive abilities in online games\n\n\n\n\n\n\n\nUniversity of Bath, School of Management, Bath, England, UK\n\nWorking within the Applied Digital Behaviour Lab on large-scale mixed methods study concerned with the prediction of online group communications which translate into real-world actions.\nPrincipal Investigator: Prof. Adam Joinson\n\n\n\n\nUniversity of Stirling, Department of Psychology, Stirling, Scotland, UK\n\nWorking within the ConFace Lab on projects around face matching and concealed identity recognition\nPrincipal Investigator: Dr. Ailsa E. Millen\n\n\n\n\nUniversity of Stirling, Department of Psychology, Stirling, Scotland, UK\n\nWorking within the Learning & Memory Lab on automated video analysis for discrimination learning in lumpfish\nPrincipal Investigator: Dr. Jamie Murray\n\n\n\n\n\n\n\nSteyvers, M., Tejeda, H., Kumar, A., Belem, C., Karny, S., Hu, X., Mayer, L. W., & Smyth, P. (2024). The Calibration Gap between Model and Human Confidence in Large Language Models. arXiv preprint arXiv:2401.13835.\nMayer, L. W., Bocheva, D., Hinds, J., Brown, O., Piwek, L., Ellis, D. (under Review) Waste not want not: Computational methods to maximise attendance in group research. Behavior Research Methods.\n\n\n\n\n\n\nBest Overall Score: Behavioural and Data Science (2022)\nPeter McEwan Prize for the Best Single Honours Psychology Student (2021)\nAlan Baddeley Prize for the Best Psychology Dissertation (2021)\nMy Stirling Award (GOLD) for acquiring an exceptional depth and breadth of extracurricular achievements (2021)\nHonourable Mention for the Best Psychology Placement Student (2021)\n\n\n\n\n\n\n\nUniversity of Tübingen, Tübingen, Baden-Württemberg, Germany\n\n\n\nNeuroMatch Academy, Los Angeles, CA, USA\n\nProject: Classifying medical misinformation in news using transformers\n\n\n\n\n\n\nAvailable upon request."
+  },
+  {
+    "objectID": "cv.html#phd-student-in-cognitive-science",
+    "href": "cv.html#phd-student-in-cognitive-science",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Institutional Email: lwmayer [at] uci [dot] edu\nPersonal Email: willuk [at] vivaldi [dot] net\nLab Website: Modelling and Decision-making Lab\nPersonal Website: https://lukmayer.github.io"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "University of California, Irvine, Irvine, CA, USA\n\nThesis (preliminary title): “Computational modelling of inversion problems in human-AI interaction”\nAdvisor: Prof. Mark Steyvers\nFocus on Bayesian modelling of human problem-solving abilities and alignment of AI systems with human cognition\n\n\n\n\nUniversity of Warwick, Coventry, England, UK\n\nThesis: “Cognition-Inspired Heuristics Improve Machine-Learning Predictions in Multi-Attribute Multi-Alternative Choice”\nAdvisor: Prof. Nick Chater\nFocus on unifying models from computational cognitive science and machine learning\n\n\n\n\nUniversity of Stirling, Stirling, Scotland, UK\n\nThesis: “Cooperation does not improve selective and/or sustained attention”\nAdvisors: Dr. John Michael and Dr. Ross Goutcher\nFocus on measuring cognitive abilities in online games"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "University of Bath, School of Management, Bath, England, UK\n\nWorking within the Applied Digital Behaviour Lab on large-scale mixed methods study concerned with the prediction of online group communications which translate into real-world actions.\nPrincipal Investigator: Prof. Adam Joinson\n\n\n\n\nUniversity of Stirling, Department of Psychology, Stirling, Scotland, UK\n\nWorking within the ConFace Lab on projects around face matching and concealed identity recognition\nPrincipal Investigator: Dr. Ailsa E. Millen\n\n\n\n\nUniversity of Stirling, Department of Psychology, Stirling, Scotland, UK\n\nWorking within the Learning & Memory Lab on automated video analysis for discrimination learning in lumpfish\nPrincipal Investigator: Dr. Jamie Murray"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Steyvers, M., Tejeda, H., Kumar, A., Belem, C., Karny, S., Hu, X., Mayer, L. W., & Smyth, P. (2024). The Calibration Gap between Model and Human Confidence in Large Language Models. arXiv preprint arXiv:2401.13835.\nMayer, L. W., Bocheva, D., Hinds, J., Brown, O., Piwek, L., Ellis, D. (under Review) Waste not want not: Computational methods to maximise attendance in group research. Behavior Research Methods."
+  },
+  {
+    "objectID": "cv.html#awards-and-honors",
+    "href": "cv.html#awards-and-honors",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Best Overall Score: Behavioural and Data Science (2022)\nPeter McEwan Prize for the Best Single Honours Psychology Student (2021)\nAlan Baddeley Prize for the Best Psychology Dissertation (2021)\nMy Stirling Award (GOLD) for acquiring an exceptional depth and breadth of extracurricular achievements (2021)\nHonourable Mention for the Best Psychology Placement Student (2021)"
+  },
+  {
+    "objectID": "cv.html#other-activities",
+    "href": "cv.html#other-activities",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "University of Tübingen, Tübingen, Baden-Württemberg, Germany\n\n\n\nNeuroMatch Academy, Los Angeles, CA, USA\n\nProject: Classifying medical misinformation in news using transformers"
+  },
+  {
+    "objectID": "cv.html#references",
+    "href": "cv.html#references",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "Available upon request."
+  },
+  {
+    "objectID": "resources/posts2/schedulling.html",
+    "href": "resources/posts2/schedulling.html",
+    "title": "Appointment Scheduling for Group research studies",
+    "section": "",
+    "text": "Here’s a little web-based tool I made for research appointment scheduling. Paper coming soon!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to my website!",
+    "section": "",
+    "text": "I’m Luke, a PhD student in Prof. Mark Steyvers’ Modelling and Decision-making Lab (MADLAB) housed in the Department of Cognitive Sciences, University of California, Irvine.\nBefore coming to the US, I lived in the UK, where I seem to have worked my way North to South; first spending a few years in Scotland, then completing my MSc in Behavioural and Data Science at the University of Warwick, and later working as a Research Assistant in the Applied Digital Behaviour Lab at the University of Bath’s School of Management! In case you were wondering, I’m originally from Germany!\nThis website is one of my hobbies, so I’ll be updating it not just with my research, but also add my thoughts on various topics that catch my interest and seem worth sharing. So if you’re curious about what I’m up to, feel free to check out the Research and Blog tabs!"
+  },
+  {
+    "objectID": "resources/res_index.html",
+    "href": "resources/res_index.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Resources\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAppointment Scheduling for Group research studies\n\n\n\n\n\nMy first DIY web-app\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research interests follow two main themes:\n\n\nAs humans, we possess a remarkable cognitive flexibility that enables us to solve problems in various domains that are still completely intractable to modern methods in Artificial Intelligence. Therefore, I think that by studying human behavior we may be able to reverse-engineer some of the machinery that gives rise to these amazing abilities, paving the way for new kinds of algorithms.\nAt the moment, I am working on a project series aiming to develop a computational account of causal reasoning for intervention on other agents. In these projects I will be using a considerable amount of simulation, computational modelling, and a series of custom-designed web experiments to develop reasoning models that exhibit human-like abilities to flexibly generalize to new contexts. My goal here is to show how this causal account can outperform sophisticated Reinforcement Learning models in dynamic environments, which includes most of the real world.\n\n\n\nWhenever people are interacting with machine-learning based systems, (human) biases can propagate through the model leading to distorted predictions. Therefore, one strand of work I am interested in pursuing in this area is to derive the transformations that lead to better alignment, thus increasing the validity of predictions. I am also interested in addressing more engineering related concerns, such as how to use information we possess about cognition to improve the performance of machine learning algorithms trained on human-generated information. In this type of work, I like to mix and match methods from Cognitive Science and Machine Learning in combination with large, real-world data-sets.\nOne fairly recent project I have completed in this domain was my master’s thesis. In it, I was able to show how re-weighting a feature space in line with some theory borrowed from multi-attribute multi-alternative decision-making can improve the performance of machine learning algorithms tasked with predicting human choices."
+  },
+  {
+    "objectID": "research.html#research-interests",
+    "href": "research.html#research-interests",
+    "title": "Research",
+    "section": "",
+    "text": "My research interests follow two main themes:\n\n\nAs humans, we possess a remarkable cognitive flexibility that enables us to solve problems in various domains that are still completely intractable to modern methods in Artificial Intelligence. Therefore, I think that by studying human behavior we may be able to reverse-engineer some of the machinery that gives rise to these amazing abilities, paving the way for new kinds of algorithms.\nAt the moment, I am working on a project series aiming to develop a computational account of causal reasoning for intervention on other agents. In these projects I will be using a considerable amount of simulation, computational modelling, and a series of custom-designed web experiments to develop reasoning models that exhibit human-like abilities to flexibly generalize to new contexts. My goal here is to show how this causal account can outperform sophisticated Reinforcement Learning models in dynamic environments, which includes most of the real world.\n\n\n\nWhenever people are interacting with machine-learning based systems, (human) biases can propagate through the model leading to distorted predictions. Therefore, one strand of work I am interested in pursuing in this area is to derive the transformations that lead to better alignment, thus increasing the validity of predictions. I am also interested in addressing more engineering related concerns, such as how to use information we possess about cognition to improve the performance of machine learning algorithms trained on human-generated information. In this type of work, I like to mix and match methods from Cognitive Science and Machine Learning in combination with large, real-world data-sets.\nOne fairly recent project I have completed in this domain was my master’s thesis. In it, I was able to show how re-weighting a feature space in line with some theory borrowed from multi-attribute multi-alternative decision-making can improve the performance of machine learning algorithms tasked with predicting human choices."
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research",
+    "section": "Publications",
+    "text": "Publications\n\nSteyvers, M., Tejeda, H., Kumar, A., Belem, C., Karny, S., Hu, X., Mayer, L. W., & Smyth, P. (2024). The Calibration Gap between Model and Human Confidence in Large Language Models. arXiv preprint arXiv:2401.13835.\nMayer, L. W., Bocheva, D., Hinds, J., Brown, O., Piwek, L., Ellis, D. (under Review) Waste not want not: Computational methods to maximise attendance in group research. Behavior Research Methods."
+  },
+  {
+    "objectID": "blog/blog_index.html",
+    "href": "blog/blog_index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Posts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Blog Post\n\n\n\n\n\nThis is a brief description of my first blog post.\n\n\n\n\n\nJun 22, 2024\n\n\n\n\n\n\nNo matching items"
+  }
+]

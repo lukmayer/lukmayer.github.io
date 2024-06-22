@@ -1,0 +1,14 @@
+[
+  {
+    "listing": "/resources/res_index.html",
+    "items": [
+      "/resources/posts2/schedulling.html"
+    ]
+  },
+  {
+    "listing": "/blog/blog_index.html",
+    "items": [
+      "/blog/posts/test.html"
+    ]
+  }
+]

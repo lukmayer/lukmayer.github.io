@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Lukas W. Mayer</title>
+<link>https://lukmayer.github.io/blog/blog_index.html</link>
+<atom:link href="https://lukmayer.github.io/blog/blog_index.xml" rel="self" type="application/rss+xml"/>
+<description>Luke&#39;s personal website</description>
+<generator>quarto-1.5.41</generator>
+<lastBuildDate>Sat, 22 Jun 2024 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>My First Blog Post</title>
+  <link>https://lukmayer.github.io/blog/posts/test.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="my-first-blog-post" class="level1">
+<h1>My First Blog Post</h1>
+<p>Welcome to my first blog post! this is just a test.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://lukmayer.github.io/blog/posts/test.html</guid>
+  <pubDate>Sat, 22 Jun 2024 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
