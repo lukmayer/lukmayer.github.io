@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luke">
+<meta name="dcterms.date" content="2025-06-15">
+<meta name="description" content="How I made my CV adapt to the theme of my site">
+
+<title>Light and Dark mode PDFs for your Quarto website – lukmayer.github.io</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicons/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2fa0555fe88427c29efa1b60aaf9e62d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-6d7e7b9b3dbd114c66b233ded7072392.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7945e2a833f1e1b32e2a8ee894f2be5e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-034891b1a1cc1f845fd10fe5f270baab.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Light and Dark mode PDFs for your Quarto website – lukmayer.github.io">
+<meta property="og:description" content="How I made my CV adapt to the theme of my site">
+<meta property="og:image" content="https://lukmayer.github.io/blog/posts/images/light_and_dark.png">
+<meta property="og:site_name" content="lukmayer.github.io">
+<meta property="og:image:height" content="226">
+<meta property="og:image:width" content="314">
+<meta name="twitter:title" content="Light and Dark mode PDFs for your Quarto website – lukmayer.github.io">
+<meta name="twitter:description" content="How I made my CV adapt to the theme of my site">
+<meta name="twitter:image" content="https://lukmayer.github.io/blog/posts/images/light_and_dark.png">
+<meta name="twitter:image-height" content="226">
+<meta name="twitter:image-width" content="314">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lukmayer.github.io/blog/posts/cv_theme.html">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">lukmayer.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../now/index.html"> 
+<span class="menu-text">Now</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://lukmayer.github.io/login_portal/"> 
+<span class="menu-text">Login</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Light and Dark mode PDFs for your Quarto website</h1>
+                  <div>
+        <div class="description">
+          How I made my CV adapt to the theme of my site
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">quarto</div>
+                <div class="quarto-category">webdev</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Luke </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 15, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">Sections:</h2>
+   
+  <ul>
+  <li><a href="#part-1-creating-a-dark-mode-cv" id="toc-part-1-creating-a-dark-mode-cv" class="nav-link active" data-scroll-target="#part-1-creating-a-dark-mode-cv">Part 1: Creating a dark mode CV</a></li>
+  <li><a href="#part-2-selectively-showing-the-fitting-cv" id="toc-part-2-selectively-showing-the-fitting-cv" class="nav-link" data-scroll-target="#part-2-selectively-showing-the-fitting-cv">Part 2: Selectively showing the fitting CV</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<p>As you may be able to tell from the fact that I am writing three posts about theming different aspects of a Quarto website on the same day, I have been re-designing my site.</p>
+<p>At some point yesterday I thought I was finally done making all page content adapt to the current website theme, until my glaring white CV nearly blinded me on my otherwise perfectly dark website.</p>
+<p>So I set out to find a solution for this. How can I render a PDF in dark mode, and then selectively show the PDF that fits the theme the user has active?</p>
+<section id="part-1-creating-a-dark-mode-cv" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-creating-a-dark-mode-cv">Part 1: Creating a dark mode CV</h2>
+<p>I didn’t want to have two separate files for my CV since I could potentially forget to update one of them, so my first challenge was to figure out how I can have one “Content” file inform two themed output files. Luckily this is very easy with includes.</p>
+<p>I simply have a <code>cv_content.qmd</code> file that contains all the Markdown and LaTeX I use for my CV. Then, I have two further <code>.qmd</code> files which use the content file as a basis and define the theme for that version in the YAML front-matter. For example, <code>cv_lwm_dark.qmd</code> looks like this:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="fu">pdf</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="at">    </span><span class="fu">documentclass</span><span class="kw">:</span><span class="at"> article</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="at">    </span><span class="fu">self-contained</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="at">    </span><span class="fu">geometry</span><span class="kw">:</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="at">      </span><span class="kw">-</span><span class="at"> top=10mm</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="at">      </span><span class="kw">-</span><span class="at"> left=15mm</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="at">      </span><span class="kw">-</span><span class="at"> right=15mm</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="at">      </span><span class="kw">-</span><span class="at"> bottom=5mm</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="at">      </span><span class="kw">-</span><span class="at"> heightrounded</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="at">    </span><span class="fu">fontfamily</span><span class="kw">:</span><span class="at"> libertine</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a><span class="at">    </span><span class="fu">colorlinks</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> linkblue</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a><span class="at">    </span><span class="fu">urlcolor</span><span class="kw">:</span><span class="at"> linkblue</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a><span class="at">    </span><span class="fu">citecolor</span><span class="kw">:</span><span class="at"> linkblue</span></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="at">    </span><span class="fu">fontsize</span><span class="kw">:</span><span class="at"> </span><span class="st">'16'</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a><span class="at">    </span><span class="fu">include-in-header</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb1-19"><a href="#cb1-19"></a><span class="fu">      text</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-20"><a href="#cb1-20"></a>        \usepackage{multicol}</span>
+<span id="cb1-21"><a href="#cb1-21"></a>        \usepackage{tabularx}</span>
+<span id="cb1-22"><a href="#cb1-22"></a>        \usepackage{lipsum}</span>
+<span id="cb1-23"><a href="#cb1-23"></a>        \usepackage{graphicx}</span>
+<span id="cb1-24"><a href="#cb1-24"></a>        \usepackage{hyperref}</span>
+<span id="cb1-25"><a href="#cb1-25"></a>        \usepackage{libertine}</span>
+<span id="cb1-26"><a href="#cb1-26"></a>        \usepackage{xcolor}</span>
+<span id="cb1-27"><a href="#cb1-27"></a>        \usepackage{sectsty}</span>
+<span id="cb1-28"><a href="#cb1-28"></a>        \pagestyle{empty}</span>
+<span id="cb1-29"><a href="#cb1-29"></a>        \setlength{\multicolsep}{2pt plus 1.0pt minus 0.75pt}</span>
+<span id="cb1-30"><a href="#cb1-30"></a>        \setlength{\columnsep}{3em}</span>
+<span id="cb1-31"><a href="#cb1-31"></a>        % Dark mode colors</span>
+<span id="cb1-32"><a href="#cb1-32"></a>        \definecolor{bgcolor}{RGB}{30,33,38}</span>
+<span id="cb1-33"><a href="#cb1-33"></a>        \definecolor{textcolor}{RGB}{209,213,219}</span>
+<span id="cb1-34"><a href="#cb1-34"></a>        \definecolor{headingcolor}{RGB}{229,231,235}</span>
+<span id="cb1-35"><a href="#cb1-35"></a>        \definecolor{linkblue}{RGB}{96,165,250}</span>
+<span id="cb1-36"><a href="#cb1-36"></a>        \pagecolor{bgcolor}</span>
+<span id="cb1-37"><a href="#cb1-37"></a>        \color{textcolor}</span>
+<span id="cb1-38"><a href="#cb1-38"></a>        \allsectionsfont{\color{headingcolor}}</span>
+<span id="cb1-39"><a href="#cb1-39"></a><span class="pp">---</span></span>
+<span id="cb1-40"><a href="#cb1-40"></a></span>
+<span id="cb1-41"><a href="#cb1-41"></a><span class="co"># {{&lt; include cv_content.qmd &gt;}} </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As you can see, I simply define the colors via LaTeX commands, and then use HTML includes to have this file use the content file as input. <strong>Note that you have to remove the ‘#’ from the code block above for this to work</strong>. So now, one content file can be used to render two different CVs, pretty neat!</p>
+</section>
+<section id="part-2-selectively-showing-the-fitting-cv" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-selectively-showing-the-fitting-cv">Part 2: Selectively showing the fitting CV</h2>
+<p>Now we want to show only one of the CV’s at a time, depending on the current site theme. According to the <a href="https://quarto.org/docs/output-formats/html-themes.html#mode-specific-content">Quarto documentation</a>, we should be able to simply wrap some iframes in the pre-defined divs like so:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">## Academic</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="at">If you can't see the embedded PDF below, you can download it [here](cv_lwm.pdf).</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="at">.light-content</span><span class="kw">}</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="at">&lt;iframe src="cv_lwm.pdf</span><span class="co">#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&amp;page=1" style="width: 90%; height: 800px; border: none;"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="at">.dark-content</span><span class="kw">}</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="at">&lt;iframe src="cv_lwm_dark.pdf</span><span class="co">#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=FitH&amp;page=1" style="width: 90%; height: 800px; border: none;"&gt;&lt;/iframe&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a><span class="at">:</span><span class="fu">:</span><span class="kw">:</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>However, for some reason this is not currently enough. I suspect it doesn’t work because of the iframes.</p>
+<p>For it to work properly, you actually do need to also add a bit of CSS to selectively hide one of the CVs. I just did it by embedding the following on my CV page:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="dt">&lt;</span><span class="kw">style</span><span class="dt">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a></span>
+<span id="cb3-4"><a href="#cb3-4"></a>body<span class="in">:not(</span><span class="fu">.quarto-dark</span><span class="in">)</span> <span class="fu">.dark-content</span> {</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">none</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>}</span>
+<span id="cb3-7"><a href="#cb3-7"></a></span>
+<span id="cb3-8"><a href="#cb3-8"></a>body<span class="fu">.quarto-dark</span> <span class="fu">.light-content</span> {</span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">none</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>}</span>
+<span id="cb3-11"><a href="#cb3-11"></a></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="fu">.light-content</span> iframe<span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a><span class="fu">.dark-content</span> iframe {</span>
+<span id="cb3-14"><a href="#cb3-14"></a>  <span class="kw">width</span><span class="ch">:</span> <span class="dv">90</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>  <span class="kw">height</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>  <span class="kw">border</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>}</span>
+<span id="cb3-18"><a href="#cb3-18"></a></span>
+<span id="cb3-19"><a href="#cb3-19"></a><span class="co">/* hiding the white scroll bar in dark mode */</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a></span>
+<span id="cb3-21"><a href="#cb3-21"></a><span class="fu">.dark-content</span> {</span>
+<span id="cb3-22"><a href="#cb3-22"></a>  <span class="kw">position</span><span class="ch">:</span> <span class="dv">relative</span><span class="op">;</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>}</span>
+<span id="cb3-24"><a href="#cb3-24"></a></span>
+<span id="cb3-25"><a href="#cb3-25"></a><span class="fu">.dark-content</span> iframe {</span>
+<span id="cb3-26"><a href="#cb3-26"></a>  <span class="kw">width</span><span class="ch">:</span> <span class="dv">90</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>  <span class="kw">height</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>  <span class="kw">border</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>}</span>
+<span id="cb3-30"><a href="#cb3-30"></a></span>
+<span id="cb3-31"><a href="#cb3-31"></a>body<span class="fu">.quarto-dark</span> <span class="fu">.dark-content</span><span class="in">::after</span> {</span>
+<span id="cb3-32"><a href="#cb3-32"></a>  <span class="kw">content</span><span class="ch">:</span> <span class="st">''</span><span class="op">;</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>  <span class="kw">position</span><span class="ch">:</span> <span class="dv">absolute</span><span class="op">;</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a>  <span class="kw">top</span><span class="ch">:</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a>  <span class="kw">right</span><span class="ch">:</span> <span class="fu">calc(</span><span class="dv">10</span><span class="dt">%</span> <span class="op">+</span> <span class="dv">0</span><span class="dt">px</span><span class="fu">)</span><span class="op">;</span> </span>
+<span id="cb3-36"><a href="#cb3-36"></a>  <span class="kw">width</span><span class="ch">:</span> <span class="dv">22</span><span class="dt">px</span><span class="op">;</span> </span>
+<span id="cb3-37"><a href="#cb3-37"></a>  <span class="kw">height</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb3-38"><a href="#cb3-38"></a>  <span class="kw">background-color</span><span class="ch">:</span> <span class="fu">var(</span><span class="va">--bs-body-bg</span><span class="op">,</span> <span class="cn">#1e2126</span><span class="fu">)</span><span class="op">;</span> </span>
+<span id="cb3-39"><a href="#cb3-39"></a>  <span class="kw">pointer-events</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb3-40"><a href="#cb3-40"></a>  <span class="kw">z-index</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb3-41"><a href="#cb3-41"></a>}</span>
+<span id="cb3-42"><a href="#cb3-42"></a></span>
+<span id="cb3-43"><a href="#cb3-43"></a></span>
+<span id="cb3-44"><a href="#cb3-44"></a><span class="dt">&lt;/</span><span class="kw">style</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>As you can see, I added a little bit of CSS just to hide the scroll bar of the embedded PDF when on the dark mode version of the site. That is because the default PDF reader of Chromium-based browsers cannot be styled, meaning I cannot override the light mode colors of the default PDF reader. Therefore, I felt simply covering the scroll bar is the simplest solution to address this limitation.</p>
+<p>And that’s it! Enjoy :)</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<div id="utterances-container"></div>
+
+<div id="utterances-container"></div>
+
+<script>
+class UtterancesThemeManager {
+  constructor() {
+    this.container = document.getElementById('utterances-container');
+    this.loaded = false;
+    this.init();
+  }
+
+  getTheme() {
+    const checks = [
+      () => document.body.classList.contains('quarto-dark'),
+      () => document.documentElement.classList.contains('quarto-dark'),
+      () => document.body.getAttribute('data-bs-theme') === 'dark',
+      () => document.documentElement.getAttribute('data-bs-theme') === 'dark',
+      () => document.body.classList.contains('dark'),
+      () => document.documentElement.classList.contains('dark')
+    ];
+
+    return checks.some(check => {
+      try { return check(); } catch { return false; }
+    }) ? 'dark' : 'light';
+  }
+
+  async waitForPageReady() {
+    return new Promise((resolve) => {
+      const checkReady = () => {
+        const conditions = [
+          document.readyState === 'complete',
+          document.body.offsetHeight > 0, 
+          window.getComputedStyle(document.body).backgroundColor !== '', 
+          !document.querySelector('link[rel="stylesheet"]:not([media="print"])') || 
+          Array.from(document.querySelectorAll('link[rel="stylesheet"]:not([media="print"])')).every(link => link.sheet)
+        ];
+
+        if (conditions.every(Boolean)) {
+          setTimeout(resolve, 200);
+        } else {
+          setTimeout(checkReady, 50);
+        }
+      };
+
+      checkReady();
+    });
+  }
+
+  async loadUtterances() {
+    if (this.loaded) return;
+
+    try {
+      await this.waitForPageReady();
+
+      let theme = this.getTheme();
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      const stableTheme = this.getTheme();
+      if (theme !== stableTheme) {
+        theme = stableTheme;
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      console.log('Loading Utterances with theme:', theme);
+
+      this.container.innerHTML = '';
+
+      const script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.setAttribute('repo', 'lukmayer/site_comments');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', theme === 'dark' ? 'github-dark' : 'github-light');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('async', '');
+
+      script.onload = () => {
+        this.loaded = true;
+        console.log('Utterances successfully loaded');
+      };
+
+      this.container.appendChild(script);
+
+    } catch (error) {
+      console.error('Error loading Utterances:', error);
+    }
+  }
+
+  updateTheme() {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const theme = this.getTheme();
+      const utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light';
+
+      try {
+        iframe.contentWindow.postMessage(
+          { type: 'set-theme', theme: utterancesTheme },
+          'https://utteranc.es'
+        );
+        console.log('Updated Utterances theme to:', theme);
+      } catch (e) {
+        console.warn('Failed to update Utterances theme:', e);
+      }
+    }
+  }
+
+  setupObservers() {
+    let updateTimeout;
+    const debouncedUpdate = () => {
+      clearTimeout(updateTimeout);
+      updateTimeout = setTimeout(() => this.updateTheme(), 150);
+    };
+
+    const observerConfig = {
+      attributes: true,
+      attributeFilter: ['class', 'data-bs-theme']
+    };
+
+    [document.body, document.documentElement].forEach(element => {
+      const observer = new MutationObserver(debouncedUpdate);
+      observer.observe(element, observerConfig);
+    });
+  }
+
+  init() {
+    this.setupObservers();
+
+    if (document.readyState === 'loading') {
+      window.addEventListener('load', () => {
+        setTimeout(() => this.loadUtterances(), 300);
+      });
+    } else {
+      setTimeout(() => this.loadUtterances(), 500);
+    }
+  }
+}
+
+new UtterancesThemeManager();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https://www.lukmayer.github.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lukmayer/website">
+      <i class="bi bi-code-slash" role="img" aria-label="Source code">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>Made with <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 24 24"><path fill="currentColor" d="M12.65 12.854V24c6.042-.325 10.923-5.105 11.33-11.125H12.65Zm-1.504 0H.02c.427 5.94 5.166 10.699 11.105 11.105V12.854Zm1.505-1.505H24C23.675 5.247 18.753.325 12.65 0Zm-1.505 0V0C5.106.427.326 5.308 0 11.35Z"></path></svg></p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="../../blog/index.xml">
+      <i class="bi bi-rss-fill" role="img" aria-label="Blog RSS feed">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

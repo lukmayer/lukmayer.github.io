@@ -1,0 +1,52 @@
+[
+  {
+    "listing": "/research/index.html",
+    "items": []
+  },
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/futureliving.html",
+      "/blog/posts/cv_theme.html",
+      "/blog/posts/switcher.html",
+      "/blog/posts/utterance_theme.html",
+      "/blog/posts/sticky_tech.html",
+      "/blog/posts/feeds.html",
+      "/blog/posts/socials.html",
+      "/blog/posts/nature.html",
+      "/blog/posts/extensions2.html",
+      "/blog/posts/free_will.html",
+      "/blog/posts/usa.html",
+      "/blog/posts/simple_blog.html",
+      "/blog/posts/reveal_multiplex.html",
+      "/blog/posts/kagi.html",
+      "/blog/posts/degoogle.html",
+      "/blog/posts/mastodon.html",
+      "/blog/posts/fast_quarto.html",
+      "/blog/posts/vsc_rstudio.html",
+      "/blog/posts/duolingo2.html",
+      "/blog/posts/vivaldi4.html",
+      "/blog/posts/freiburg.html",
+      "/blog/posts/essentials.html",
+      "/blog/posts/generative1.html",
+      "/blog/posts/wifi.html",
+      "/blog/posts/quarto_template.html",
+      "/blog/posts/stats3.html",
+      "/blog/posts/stats2.html",
+      "/blog/posts/stats1.html",
+      "/blog/posts/vivaldi3.html",
+      "/blog/posts/r_vscode.html",
+      "/blog/posts/vivaldi2.html",
+      "/blog/posts/duolingo.html",
+      "/blog/posts/minimal.html",
+      "/blog/posts/login.html",
+      "/blog/posts/habit.html",
+      "/blog/posts/search.html",
+      "/blog/posts/rss.html",
+      "/blog/posts/index.html",
+      "/blog/posts/vivaldi1.html",
+      "/blog/posts/quarto.html",
+      "/blog/posts/post1.html"
+    ]
+  }
+]
