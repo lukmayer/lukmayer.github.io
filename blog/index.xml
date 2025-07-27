@@ -10,7 +10,83 @@
 <atom:link href="https://lukmayer.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lukas Mayer&#39;s personal blog</description>
 <generator>quarto-1.7.32</generator>
-<lastBuildDate>Thu, 26 Jun 2025 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 27 Jul 2025 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>My current ultra minimal phone</title>
+  <dc:creator>Luke </dc:creator>
+  <link>https://lukmayer.github.io/blog/posts/phone2.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>I don’t use the phone much, as I prefer to use my laptop for most things <sup>1</sup>. Of course, I do need it for some things like navigation, checking email, searching things on the go. This is all fine and dandy, for a minimal setup, as you could just have your five apps, use bookmarks in the browser instead of apps where feasible and call it a day, right? Well, yes, you could, but I would not be quite satisfied with that personally. That is because I want it to be configured in a way that maximizes my productivity (and thus, minimizes my screen time), which requires a certain design philosophy I’ve come up with over the years. Basically, I want important things to be easy to reach, and everything else to be hidden away in multiple layers. I’ve written about this in my <a href="https://lukmayer.github.io/blog/posts/minimal.html">original phone post</a>, but wanted to provide an updated overview with all my essentials here. Hopefully, you’ll like what you see!</p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;I actually really wish there would exist some kind of phone sized device that somehow folds out a screen and a keyboard… Imagine a modern folding phone but better and with a physical keyboard</p></div></div><p><br>
+</p>
+<section id="the-basics" class="level1">
+<h1>The basics</h1>
+<p>As I mentioned, I don’t want unnecessary apps and visual clutter, and like to organize things hierarchically. My hierarchy goes like this:</p>
+<ul>
+<li><ol type="1">
+<li>Home Screen: Only my calendar and to-do list live here as widgets so that no app opening is required. In particular, my calendar widget shows the Week view, so that it’s almost instantaneous to see where I am meant to be and my availability. The To-Do list widget simply serves as a convenient place to take a quick note. If you have a good idea, you should be able to write it down immediately, with as little delay as possible.</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>A reduced drawer with important apps: Here are all the apps that I need on my phone and are used fairly regularly. Think Navigation and E-mail, messaging, the Banking app, the Password manager.</li>
+</ol></li>
+<li><ol start="3" type="1">
+<li>Everything else: There are so many apps that you only need very irregularly, so I don’t see why I would have them take front and center real-estate when I can put them in a separate space</li>
+</ol></li>
+</ul>
+<p><br>
+</p>
+</section>
+<section id="my-specific-set-up" class="level1 page-columns page-full">
+<h1>My specific set-up</h1>
+<p>My set-up revolves around a non-standard version of Android, a custom launcher, and a specific calendar app</p>
+<ul>
+<li><p>I use <a href="https://grapheneos.org">GrapheneOS</a> as my operating system. This is a specialized, security-focused, version of Android that does not feature Google apps that usually come pre-installed. So for example, there is no Youtube app on my phone. There are other options available if you want a “de-googled” experience. If disabling the Youtube app is good enough for you, and you’re not concerned with the privacy and security of your phone you can safely ignore this.</p></li>
+<li><p><a href="https://github.com/MM2-0/Kvaesitso">Kvaesitso</a> is hands-down the best launcher for my purposes. It’s completely free and open-source, and available on <a href="https://f-droid.org/en/">F-droid</a><sup>2</sup>. This has become the cornerstone of my phone, and so will get its own section (see below).</p></li>
+</ul>
+<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;Never heard of <a href="https://en.wikipedia.org/wiki/F-Droid">F-droid</a>? Basically, a non-commercial app store where everything is free and open-source. Great for utility apps, from indie devs. Do not expect big brand apps here though!</p></div></div><ul>
+<li><a href="https://www.appgenix-software.com">Business Calendar 2</a> has been my calendar app of choice for something like 5 years now. The only real reason for that is that they provide a customizable week-view widget with a time-line showing where you are in the day. I genuinely cannot understand how no other calendar app, which all have a week view with a time-line, do not offer this as a widget. Once you come to expect being able to see your schedule at a glance, there is no going back to having to open an app for it. Agenda view, the one widget all calendar apps seem to have, does not come even remotely close to a graphical representation of your week for visual clarity. BC2’s to-do widget is excellent too.</li>
+</ul>
+<p><br>
+</p>
+</section>
+<section id="kvaesitso" class="level1">
+<h1>Kvaesitso</h1>
+<p>It’s a recurring theme in my life to realize that the most powerful software is often the most minimal. Kvaesitso serves this description really well as a pretty customizable launcher. It might not have the most features out of any launcher I have seen, but I’ve found Kvaesitso’s features are extremely thoughtfully designed. With the right settings, my home screen is just my Calendar and to do widget and a search bar. You access the search bar either by tapping on it or swiping down (my preferred method). Once your focus is on the search bar, your app drawer is shown, meaning a swipe and a tap is all you need to access a specific app. The search itself is really powerful, you can search for apps, contacts, do web-searches, calculations, set timers, convert units, etc. all in this one tiny text field. You can also customize which apps show up in the grid. In my case, I set every lesser used app to show “Search only” so that it will only appear in search results when I start typing its name, not in the app drawer that shows before you have typed anything. This is far more convenient than having to open a “hidden apps” folder as you would in other good Android launchers.</p>
+<p>With Kvaesitso, I can achieve almost unparalleled levels of minimal. There is only the home screen, the search interface and the android notification center. These are the only three views you have outside of apps. There are no pages, and no scrolling is ever required. There is only one gesture: swiping down - either from anywhere in the main screen to open search or from the very top to open the notification center. It can even automatically theme your icons to be grayscale, which is nice since bright logos can be distracting.</p>
+</section>
+<section id="screenshots" class="level1">
+<h1>Screenshots</h1>
+<div class="text-center">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/kvae_homescreen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="BC2’s week widget and To-do widgets. Not neccessarily the most modern deisgn, but still the most functional"><img src="https://lukmayer.github.io/blog/posts/images/kvae_homescreen.png" class="img-fluid figure-img" alt="BC2’s week widget and To-do widgets. Not neccessarily the most modern deisgn, but still the most functional"></a></p>
+<figcaption>BC2’s week widget and To-do widgets. Not neccessarily the most modern deisgn, but still the most functional</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="images/kvae_search.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Combined app drawer and universal search in Kvaesitso"><img src="https://lukmayer.github.io/blog/posts/images/kvae_search.png" class="img-fluid figure-img" alt="Combined app drawer and universal search in Kvaesitso"></a></p>
+<figcaption>Combined app drawer and universal search in Kvaesitso</figcaption>
+</figure>
+</div>
+</div>
+
+
+</section>
+
+
+ ]]></description>
+  <category>phone</category>
+  <guid>https://lukmayer.github.io/blog/posts/phone2.html</guid>
+  <pubDate>Sun, 27 Jul 2025 07:00:00 GMT</pubDate>
+  <media:content url="https://lukmayer.github.io/blog/posts/images/kvae_logo.jpeg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Country dashboard</title>
   <dc:creator>Luke </dc:creator>
@@ -451,7 +527,7 @@
  ]]></description>
   <category>r</category>
   <guid>https://lukmayer.github.io/blog/posts/dashboard.html</guid>
-  <pubDate>Thu, 26 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 26 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/countries.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -1827,7 +1903,7 @@ loaded via a namespace (and not attached):
   <category>r</category>
   <category>life</category>
   <guid>https://lukmayer.github.io/blog/posts/futureliving.html</guid>
-  <pubDate>Wed, 25 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Wed, 25 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/countries.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -2420,7 +2496,7 @@ font-style: inherit;">&gt;</span></span></code></pre></div>
   <category>quarto</category>
   <category>webdev</category>
   <guid>https://lukmayer.github.io/blog/posts/cv_theme.html</guid>
-  <pubDate>Sun, 15 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 15 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/light_and_dark.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
@@ -2578,7 +2654,7 @@ font-style: inherit;">;</span></span>
   <category>quarto</category>
   <category>webdev</category>
   <guid>https://lukmayer.github.io/blog/posts/switcher.html</guid>
-  <pubDate>Sun, 15 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 15 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/light_and_dark.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
@@ -3831,7 +3907,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
   <category>quarto</category>
   <category>webdev</category>
   <guid>https://lukmayer.github.io/blog/posts/utterance_theme.html</guid>
-  <pubDate>Sun, 15 Jun 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 15 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/light_and_dark.png" medium="image" type="image/png" height="104" width="144"/>
 </item>
 <item>
@@ -3861,7 +3937,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>software</category>
   <guid>https://lukmayer.github.io/blog/posts/sticky_tech.html</guid>
-  <pubDate>Sun, 18 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 18 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/big_tech.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 <item>
@@ -3893,7 +3969,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>rss</category>
   <guid>https://lukmayer.github.io/blog/posts/feeds.html</guid>
-  <pubDate>Sun, 11 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 11 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/reading.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3919,7 +3995,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>social media</category>
   <guid>https://lukmayer.github.io/blog/posts/socials.html</guid>
-  <pubDate>Sun, 11 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 11 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/fishing.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3946,7 +4022,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>life</category>
   <guid>https://lukmayer.github.io/blog/posts/nature.html</guid>
-  <pubDate>Sun, 04 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 04 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/zebra.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -3990,7 +4066,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>extensions</category>
   <guid>https://lukmayer.github.io/blog/posts/extensions2.html</guid>
-  <pubDate>Sat, 03 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 03 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/puzzle.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4033,7 +4109,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>phd</category>
   <guid>https://lukmayer.github.io/blog/posts/free_will.html</guid>
-  <pubDate>Fri, 02 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/will.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4073,7 +4149,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
   <category>phd</category>
   <category>life</category>
   <guid>https://lukmayer.github.io/blog/posts/usa.html</guid>
-  <pubDate>Fri, 02 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Fri, 02 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/bread.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4095,7 +4171,7 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
  ]]></description>
   <category>webdev</category>
   <guid>https://lukmayer.github.io/blog/posts/simple_blog.html</guid>
-  <pubDate>Thu, 01 May 2025 04:00:00 GMT</pubDate>
+  <pubDate>Thu, 01 May 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/dots.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4223,7 +4299,7 @@ font-style: inherit;">](../../../presentations/multiplex-speaker.html)</span></s
  ]]></description>
   <category>quarto</category>
   <guid>https://lukmayer.github.io/blog/posts/reveal_multiplex.html</guid>
-  <pubDate>Sat, 05 Apr 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 05 Apr 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/quarto_logo.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
@@ -4403,7 +4479,7 @@ Auxillary services:
   <category>search engines</category>
   <category>software</category>
   <guid>https://lukmayer.github.io/blog/posts/kagi.html</guid>
-  <pubDate>Sun, 30 Mar 2025 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 30 Mar 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/kagi.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 <item>
@@ -4507,7 +4583,7 @@ Auxillary services:
   <category>phone</category>
   <category>search engines</category>
   <guid>https://lukmayer.github.io/blog/posts/degoogle.html</guid>
-  <pubDate>Sat, 22 Feb 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 22 Feb 2025 08:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/debian.png" medium="image" type="image/png" height="120" width="144"/>
 </item>
 <item>
@@ -4612,7 +4688,7 @@ Auxillary services:
   <category>mastodon</category>
   <category>social media</category>
   <guid>https://lukmayer.github.io/blog/posts/mastodon.html</guid>
-  <pubDate>Fri, 14 Feb 2025 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 14 Feb 2025 08:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/mastodon.png" medium="image" type="image/png" height="75" width="144"/>
 </item>
 <item>
@@ -5023,7 +5099,7 @@ font-style: inherit;">cd</span> ..</span></code></pre></div>
   <category>software</category>
   <category>code</category>
   <guid>https://lukmayer.github.io/blog/posts/fast_quarto.html</guid>
-  <pubDate>Sat, 08 Feb 2025 05:00:00 GMT</pubDate>
+  <pubDate>Sat, 08 Feb 2025 08:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/quarto.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 <item>
@@ -5068,134 +5144,8 @@ font-style: inherit;">cd</span> ..</span></code></pre></div>
   <category>software</category>
   <category>vscode</category>
   <guid>https://lukmayer.github.io/blog/posts/vsc_rstudio.html</guid>
-  <pubDate>Fri, 24 Jan 2025 05:00:00 GMT</pubDate>
+  <pubDate>Fri, 24 Jan 2025 08:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/vscode.png" medium="image" type="image/png" height="102" width="144"/>
-</item>
-<item>
-  <title>How to survive Free-tier Duolingo</title>
-  <dc:creator>Luke </dc:creator>
-  <link>https://lukmayer.github.io/blog/posts/duolingo2.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="why-write-this-post" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="why-write-this-post">Why write this post?</h2>
-<p>Duolingo has been my preferred language learning app for over 5 years now, simply due to its impressive scale and thoughtful design. It is still the best app for language learning in my opinion, given you are aware of its limits and put in the work to overcome them. I’ve discussed the Pros and Cons of Duolingo, and its evolution over the years in my <a href="https://lukmayer.github.io/blog/posts/duolingo.html">previous Duolingo post</a> - so for more background read that post. One pain point I have with the app is that its creators are monetizing the app more and more in the pursuit of profitability as a publicly traded company. Unfortunately, as a long time user I have therefore witnessed multiple major changes that I believe have made the user experience worse (rather than better) in specific ways.</p>
-<p>In its current state, Duolingo is challenging to use as a free user, somewhat contrasting Duolingo’s self-proclaimed mission to be “<a href="https://www.duolingo.com/info">Universally accessible</a>”. The reason you are more-or-ess obliged to pay <a href="https://www.duolingo.com/super">~84 USD</a> a year to continue using the free service<sup>1</sup> is simple. Duolingo has a “hearts” system in which you have a limited number of mistakes you can make before the app refuses to let you continue. Being booted out of a lesson is obviously an extremely frustrating experience that poses a real risk to your motivation for maintaining language learning ambitions. By default, you have 5 hearts, with one heart replenishing every 5 hours, and an option to perform practice lessons to replenish one heart for each. Should you run out of hearts during a lesson, your only options are to quit that lesson or pay 450 “Gems” to refill your hearts to 5. Being a premium user removes all need to worry about silly hearts.</p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;as a non “tech-savvy” user</p></div><div id="fn2"><p><sup>2</sup>&nbsp;An otherwise great feature, that is now working against you!</p></div></div><p>At first glance, it seems like there are fair amount of options for restoring hearts, doesn’t it? Well, there are a couple of problems here. First of all, the hearts system did not used to exist at all, suggesting to me that its main purpose is to push users towards premium. Secondly, Duolingo is not infallible, with tiny typos or alternative expressions potentially costing you hearts when you can’t afford to lose them. Third is the problem that gems are not that easily earned. You earn them for completing lessons and challenges, but the average user probably only earns 5-20 per day. Compare that to the 450 gem cost of replenishing hearts in a pinch - it’s not hard to see that you soon will be gems bankrupt (assuming you had any in the first place). Finally, if all of this was not enough, Duolingo has recently made a change on their app limiting how many hearts you can earn through practice lessons. On the mobile app, you are now only eligible for <strong>a single practice lesson</strong> at specific times. Since you will be broke for gems, your only realistic options are now: wait and risk not being able to continue your streak<sup>2</sup>, quit out of frustration, or pay.</p>
-<p>Putting on my cynic hat, I might <strong>speculate</strong> that since Duolingo’s exercises are personalized to the user, they could (and probably would) use their analytics to ensure that you regularly run out of hearts due to exercises that are just “a tad bit” out of reach for you. They would conceivably do this if they believe you would be likely to pay as a result. I would not be shocked to learn they already do this, as it would be very much in line with the other changes they have made to become more profitable.</p>
-<p>I bought the premium subscription for two years, but I have very mixed feelings about supporting Duolingo’s current business strategy. From what I gather, it feels as though their mission to make language learning universally accessible is being compromised, with their focus seemingly shifting towards more polished experiences that require much more funding.</p>
-<p>This is why I asked myself what would it take to make the free-tier version of Duolingo sustainable in its current form? In essence, how can one maximize their learning within the contraints of Duolingo’s freemium model? I think you will find that what I suggest here will not only improve your sanity while using Duolingo, but also quite possibly your learning.</p>
-<p><br>
-</p>
-</section>
-<section id="improving-your-heart-health" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="improving-your-heart-health">Improving your heart health</h2>
-<section id="part-1-making-better-use-of-the-hearts-you-get" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="part-1-making-better-use-of-the-hearts-you-get">Part 1: Making better use of the hearts you get</h3>
-<section id="stop-using-the-app1eleven3" class="level4 page-columns page-full">
-<h4 class="anchored" data-anchor-id="stop-using-the-app1eleven3">STOP using the app!!!1!!eleven!!<sup>3</sup></h4>
-<p>A little known fact about Duolingo is that their website is always <em>at least</em> a year behind the app on any “feature” introductions. Many things seemingly never make it to the web-app. The reason this is important for this guide is extremely simple: You can still do unlimited practice lessons on the website. This means that so long as you manage to finish lessons by the skin of your teeth, you can keep learning. The practice lessons are actually not bad, as they serve as revision of old content<sup>4</sup>.</p>
-<div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;Weirdly, the practice lessons you get as a free-tier user are of much higher quality and less repetitive than the ones you get access to as a premium user…</p></div></div><p>So the strategy is simple: Do a lesson, try to complete it with at least one heart, do practice lessons until you are topped up, repeat until you’re done learning for the day.</p>
-<p>Do note though, some things are not available on the website. For example, timed challenges. Luckily, these missing features are pretty insignificant anyway.</p>
-<p><br>
-</p>
-</section>
-<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;Not using the mobile app for services that also have a website is a good idea in general because it is easier to modify websites.</p></div></div><section id="a-tale-of-early-birds-and-night-owls" class="level4">
-<h4 class="anchored" data-anchor-id="a-tale-of-early-birds-and-night-owls">A tale of early birds and night owls</h4>
-<p>Duolingo had a period where they rewarded you for checking in twice a day, by giving you temporary boosts to how much XP a lesson would award you. The way it worked was that if you did a lesson in the morning, you would become eligible for this boost later on in the day. If you did a lesson during this later “evening” stage you would get a boost available the next morning. This was actually a great system because you felt strongly incentivized to do lessons so that “future you” will feel good when it comes to the next practice time. It’s actually been my habit to do lessons twice a day ever since this existed.</p>
-<p>Of course, with the hearts systems mechanics, this habit is dually valuable. Firstly, doing lessons first thing in the morning is hands-down the best thing you can do. This is because your mind will be fresh and focused, resulting in less mistakes and a higher capacity to practice. Doing lessons in the late evening can be <strong>really hard</strong> simply due to being so fatigued at the end of your day. But establishing this evening habit as well lets you maximize your hearts since you will have “gained” up to two hearts since your morning practice.</p>
-<p>Therefore, the strategy now is: Do lessons primarily in the morning and then try to squeeze one or two more lessons into the evening to make sure you’re using those hearts as soon as they become available.</p>
-<p><br>
-</p>
-</section>
-</section>
-<section id="part-2-preventing-heart-aches" class="level3">
-<h3 class="anchored" data-anchor-id="part-2-preventing-heart-aches">Part 2: Preventing heart-aches</h3>
-<section id="babble-like-the-baby-you-are" class="level4">
-<h4 class="anchored" data-anchor-id="babble-like-the-baby-you-are">Babble like the baby you are</h4>
-<p>I have previously faulted Duolingo for having relatively few/poor speaking practice options. Therefore, if you are using Duolingo you should take matters into your own hands a bit more. One easy way to do this is to simply sound everything out loud during lessons. Not only does this help you get valuable pronunciation and speaking practice, it also clearly improves your retention, and makes you less likely to make mistakes. The reason you are less likely to make mistakes is that when you are sounding everything out loud, you are taking the lessons a bit slower. In other words, you are reading more carefully, and thus will avoid misinterpretation errors. A bit awkward a first, but doing this is basically a no-brainer if hearts are at stake!</p>
-<p><br>
-</p>
-</section>
-<section id="work-smarter-not-harder" class="level4">
-<h4 class="anchored" data-anchor-id="work-smarter-not-harder">Work smarter, not harder</h4>
-<p>Another one of these little known features of Duolingo is that most of the time, you can either submit your answer for a given exercise, or hit the “skip” button. Pressing the skip button will reveal the solution to the question, and add the question to the back of the stack of lesson exercises, much like a mistake would. Unlike a mistake however, pressing skip will not cost you a heart. Thus, if you are unsure about how to spell something, what the word was, etc. you should make use of this.</p>
-<p><br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/skip.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://lukmayer.github.io/blog/posts/images/skip.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
-</figure>
-</div>
-<div class="text-center">
-<p>The elusive skip button (bottom-left) in the wild</p>
-</div>
-<p><br>
-</p>
-<p>Of course, you’re also not forbidden from opening another tab and translating answers you are foggy on. Language models are decent at fixing grammar and spelling errors. Remember, the goal is to not let Duolingo drain your gems wallet any more than strictly necessary because we need those gems for when you are having a rough day.</p>
-<p><br>
-</p>
-</section>
-</section>
-</section>
-<section id="hacking-duolingo" class="level2">
-<h2 class="anchored" data-anchor-id="hacking-duolingo">“Hacking” Duolingo</h2>
-<p>To be honest, following everything in Part 1 might still not be enough to make your net gem earnings positive. The reason we care so much about gems is that they are the only way to continue a lesson when you’re having a bad day. Having to abandon a lesson you struggled so hard on because you can’t afford to continue is really frustrating and may even lead you to quit all together.</p>
-<p>So the next level is to use more advanced tools to help you.</p>
-<p>Since we are using the website, we can use browser extensions that modify how Duolingo works. There are a couple that are very recommendable. For our goals, one really stands out.</p>
-<p><br>
-</p>
-<section id="almost-essential-duolingo-fast-mode" class="level4">
-<h4 class="anchored" data-anchor-id="almost-essential-duolingo-fast-mode">Almost essential: Duolingo Fast Mode</h4>
-<p><a href="https://chromewebstore.google.com/detail/duolingo-fast-mode/mhmipgjhaailkgpdknkibeacoifgfddd">Duolingo Fast Mode</a> has almost no users, even though it makes free-tier Duolingo so much nicer. This extension gives you instant feedback while you are doing exercises, allowing you to know <em>before</em> you submit your answer whether it will be accepted. It will even help you notice if you are using the wrong word form. However, note that these suggestions are very picky, and will expect you to type out all punctuation and special characters!</p>
-<p><br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/typo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://lukmayer.github.io/blog/posts/images/typo.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
-</figure>
-</div>
-<div class="text-center">
-<p>Fast Mode helping me spot a typo before submitting (highlight just underneath Bea)</p>
-</div>
-<p><br>
-</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="images/feedback.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="https://lukmayer.github.io/blog/posts/images/feedback.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></a></p>
-</figure>
-</div>
-<div class="text-center">
-<p>Fast Mode helping me realize I’m not using the right word</p>
-</div>
-<p><br>
-</p>
-<p>Some other nice extensions include: <a href="https://chromewebstore.google.com/detail/duoleavemealone-for-duoli/clipadhhddnpnocanhnbonnhppdibnpf/reviews">Duoleavemealone</a>, which will automatically skip through unnecessary screens during lessons, and <a href="https://chromewebstore.google.com/detail/duolingo-solution-viewer/idffaipgnlkhfhibgnodeiogpgojcmfm">Duolingo Solution Viewer</a>, which provides additional information on what solutions would have been accepted whenever you do make a mistake.</p>
-<p>Finally, being a free user on Duolingo also means enduring tons of ads. So if you have not already, do yourself a favor and install an ad-blocker. Some useful information on ad-blockers and other essential web tools <a href="https://lukmayer.github.io/blog/posts/essentials/">here</a>.<br>
-</p>
-<p><br>
-</p>
-</section>
-</section>
-<section id="conclusion" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>I hope this guide has successfully shown you how to make the most out of the free user experience on Duolingo. While some of these tips may appear like “cheating”, I actually believe the learning experience is either improved or at least not harmed by using them. You might find that the more “hacky” solutions are not necessary at the moment, but as a long time user I can tell you that they most likely will eventually be needed<sup>5</sup>. Good luck on your language learning journey!</p>
-
-
-<div class="no-row-height column-margin column-container"><div id="fn5"><p><sup>5</sup>&nbsp;For reference, Duolingo initially promised they would not introduce the hearts system to their website, and yet here we are.</p></div></div></section>
-
-
- ]]></description>
-  <category>software</category>
-  <category>duolingo</category>
-  <category>extensions</category>
-  <guid>https://lukmayer.github.io/blog/posts/duolingo2.html</guid>
-  <pubDate>Thu, 23 Jan 2025 05:00:00 GMT</pubDate>
-  <media:content url="https://lukmayer.github.io/blog/posts/images/duo.png" medium="image" type="image/png" height="81" width="144"/>
 </item>
 </channel>
 </rss>
