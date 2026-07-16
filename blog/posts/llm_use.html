@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luke">
+<meta name="dcterms.date" content="2025-12-29">
+<meta name="description" content="An attempt at wrangling with the implications">
+
+<title>Does it make sense to use LLMs for learning? – lukmayer.github.io</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicons/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-highlight-style-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-highlight-style-dark-43b2d995d73a1754bd3a6f5d899fe64b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f01f041d37a6a52b30ab646ad9ff7256.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9d625de15e35d1f6d36e6e7b156cc2b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Does it make sense to use LLMs for learning? – lukmayer.github.io">
+<meta property="og:description" content="An attempt at wrangling with the implications">
+<meta property="og:image" content="https://lukmayer.github.io/blog/posts/images/skynet.jpg">
+<meta property="og:site_name" content="lukmayer.github.io">
+<meta name="twitter:title" content="Does it make sense to use LLMs for learning? – lukmayer.github.io">
+<meta name="twitter:description" content="An attempt at wrangling with the implications">
+<meta name="twitter:image" content="https://lukmayer.github.io/blog/posts/images/skynet.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lukmayer.github.io/blog/posts/llm_use.html">
+</head>
+
+<body class="floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo light-content">
+    <img src="../../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">lukmayer.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../now/index.html"> 
+<span class="menu-text">Now</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://lukmayer.github.io/login_portal/"> 
+<span class="menu-text">Login</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Does it make sense to use LLMs for learning?</h1>
+                  <div>
+        <div class="description">
+          An attempt at wrangling with the implications
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">random</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Luke </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 29, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">Sections:</h2>
+   
+  <ul>
+  <li><a href="#why-a-critical-angle-is-required" id="toc-why-a-critical-angle-is-required" class="nav-link active" data-scroll-target="#why-a-critical-angle-is-required">Why a critical angle is required</a></li>
+  <li><a href="#the-problem-with-going-ai-first" id="toc-the-problem-with-going-ai-first" class="nav-link" data-scroll-target="#the-problem-with-going-ai-first">The problem with going AI-first</a></li>
+  <li><a href="#where-we-seem-to-be-heading-and-why-it-wont-work" id="toc-where-we-seem-to-be-heading-and-why-it-wont-work" class="nav-link" data-scroll-target="#where-we-seem-to-be-heading-and-why-it-wont-work">Where we seem to be heading and why it won’t work</a></li>
+  <li><a href="#lets-start-acknowledging-that-models-are-models-not-people" id="toc-lets-start-acknowledging-that-models-are-models-not-people" class="nav-link" data-scroll-target="#lets-start-acknowledging-that-models-are-models-not-people">Let’s start acknowledging that models are models, not people</a></li>
+  <li><a href="#maybe-a-better-way" id="toc-maybe-a-better-way" class="nav-link" data-scroll-target="#maybe-a-better-way">Maybe a better way?</a></li>
+  <li><a href="#parting-thoughts" id="toc-parting-thoughts" class="nav-link" data-scroll-target="#parting-thoughts">Parting thoughts</a></li>
+  <li><a href="#recommended-reading" id="toc-recommended-reading" class="nav-link" data-scroll-target="#recommended-reading">Recommended reading</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<p>In this post, I want to take a critical look at LLMs. While my research focus is more around how people’s decision-making is influenced by the presence of AI-style tools, I do have an interest in how LLM-use affects learning. After all, the two are at least vaguely related. Before we continue, I’d like to remind everyone that this blog is mostly my opinion/conjecture, and should not be confused with a rigorous academic take.</p>
+<p>I will work along the assumption that using LLMs for learning is genuinely a good use of one’s time in some settings, but not in others - meaning my goal with this post is to identify those settings and explore the possible implications intuitively. Since I want to take a learning-focused lens, I won’t talk about how LLMs can be used for boilerplate or any situation where one does not have to care about the quality of the work and thus learning. While only referred to loosely, my running example will be learning to code.</p>
+<section id="why-a-critical-angle-is-required" class="level1">
+<h1>Why a critical angle is required</h1>
+<p>I’ve noticed that over the last 3 years, I, like many others, learned to be wary of trusting LLM output too much. I remember finding those very first interactions when the technology was still hot off the press quite impressive - it was startling to receive such tailored responses to detailed queries almost instantly, when the week prior I was still trying to piece together code solutions from esoterically written Stackoverflow posts. But then came the first hurdle. Naturally, these initial public-facing models were not that capable and so of course disillusionment soon followed. Still, there was this hope that these limitations were just a problem of time. Progress was notable in the 2 years that followed, and so I had a phase where I was vibe-coding quite a bit, simply following the path of least resistance. Since then, the improvements LLMs have made seem like they have slowed down, and even the biggest AI boosters probably have to acknowledge that human learning still has a role in tomorrow’s society since you will inevitably run into issues that an LLM can’t solve. So after a year of relatively high vibe coding for my liking, over time I have regressed more and more back to ‘artisanal’ coding.</p>
+<p>These days, I only ever interact with a chat bot in the chat window, never directly connecting it to what I am working with. I want to be in control of what it is and isn’t seeing, so that it doesn’t get stuck on irrelevant details. In fact, sometimes I write an intentionally abstract prompt because it will otherwise latch onto keywords. My queries rarely involve more than something along the lines of “how do you do {something} in {language}?”, or some help with a bug I’m failing to identify. Of course, not connecting the LLM to my codebase is significantly more inconvenient. At the same time, this is kind of the point, as it forces me to put in more thought.</p>
+<p>The decision-sequence I seem to follow after 3 years of chatbots being widely available looks something like:</p>
+<ul>
+<li>Can I do it on my own? If yes, continue (60% of the time)</li>
+<li>If not, can I few-shot it with an LLM? (35% of the time)</li>
+<li>If not, can I do it myself with the documentation? (4% of the time)</li>
+<li>If not, can I do it with the LLM and with the documentation? (1% of the time)</li>
+</ul>
+<p>Where you only progress down to the next level if the current level was not able to solve the problem.</p>
+<p>Not everyone seems to have a clear idea of this kind of hierarchical strategy for LLM use, but I notice many think about the problem in this style - that using LLMs too much has a cognitive cost that one has to deliberately seek to avoid.</p>
+<p>Landing on this hierarchy after enough experience seems logical since it represents an intentional trade-off between effort minimization while having a handle on reliability. If I go straight to vibe-coding everything top to bottom, chances are I won’t be able to debug anything about this code myself. After all, it was hardly me who wrote it. This is clearly a liability if the code is even of fleeting importance. So to balance it out then, is basically writing it by myself as much as possible, using the LLM only to the extent required not to break my flow.</p>
+<p>Circling back to the subject of learning, the problem I see with this hierarchy of only gradually integrating LLM use as the problem requires is that this hierarchy still minimizes invested effort. It’s still defaulting to some degree of vibe-coding at the slightest hurdle - thus removing the productive struggle that could yield a learning breakthrough from having to actually understand why X solves problem Y. Effectively, it’s still too easy to outsource insight. It’s a bit like the chatbot version of copy-pasting from StackOverflow with only the necessary tweaks to get the code to work for your case, but without an understanding of the how and why.</p>
+<p>And so if I can already recognize that following the gradual-use strategy has drawbacks when learning is the goal, I wonder whether it’s possible to anticipate what would be a better approach: how we might use chatbots in another few years as we come to learn the right balance between short-term goals (like solving a specific instance of a problem, quickly) and long-term goals better and better (like learning how to solve the whole class of problems of that type yourself). It’s clear that if I don’t expect LLMs to replace code-writing that I should invest in my ability to code. What’s less clear then is how to best invest in my ability to code, given that LLMs present an attractive opportunity to outsource much of the actual hard work of learning? I don’t think the answer is to simply abstain from using LLMs completely, and perhaps by the end of this post you’ll see why.</p>
+</section>
+<section id="the-problem-with-going-ai-first" class="level1">
+<h1>The problem with going AI-first</h1>
+<p>LLMs are extremely convenient as you can out-source a huge chunk of effort and thought. Therefore, one worry that I have is that many people will become very reliant on LLMs for their work due to this speed and convenience, de-skill themselves in the process, until they are inevitably automated away since their work is largely copy-pasting LLM output. Even if your work is a bit more technical, the presence of fairly competent LLMs could present a significant risk to your career. Why keep paying you, when an intern with a fancy AI subscription can figure out the work? Now that’s an extreme example, but I think it generally holds that performance metrics being equal, someone slightly less skilled + AI is cheaper than someone slightly more skilled without AI, which should be concerning to you if you’re not the CEO. It’s really only the mega-nerds that have some protection because their work is too niche and technical to face significant threat from this kind of automation. Personally, I don’t think I’m nearly nerdy enough to fall into that latter group.</p>
+<p>Now, companies have already tried going AI-first and firing relatively indiscriminately, and for many, it has not worked out. Turns out, replacing people with an LLM is not that easy. However, I think the de-skilling threat still largely holds. Meaning the worry is now that by stunting my growth as a programmer, I am slopping myself into becoming an extremely replaceable, deskilled human-in-the-loop worker that’s not worth a decent salary. The main way I see for resisting this trend is to become the person that actually knows things deeply instead of being a fleshy front-end to Microsoft Co-pilot. That does not necessarily mean becoming obsessed with a specific technical topic (a strategy that has its own risks). For many people, it could be that your value as a worker will largely be derived from being knowledgeable about many, topics/technologies (curiosity) and thanks to that being able to see new connections (creativity). LLMs, as models based on machine-learning methods “suffer” from being purely associative (the first rung of Pearl’s hierarchy of causal reasoning) and as a result necessarily have a limited ability to generalize to novel contexts that are not predicted by existing statistical associations.</p>
+<p>The tension I feel then is that I want to reduce how much I use LLMs as much as possible because of the risk of de-skilling myself (or the lack of skill progression) but at the same time, LLMs definitely have their good moments. Sometimes, the chatbot gave you a critical piece of information or insight that maybe you would not have found or arrived at otherwise. There is something of genuine utility in getting an insight that would have been hard to have otherwise, but at the same time there still is that risk of outsourcing more learning than that potential novel insight would have been worth. The counterfactual (highest rung on Pearl’s hierarchy of causal reasoning) of what would have happened if you had/had not used the chatbot for the specific problem at hand is actually key for assessing the impact the use of these technologies has on you. And so if the crux to genuinely productive LLM use is having the foresight and metacognition to recognize when the use of a chatbot is appropriate, our currently relatively coarse-grained studies comparing developers without access to AI to those with access to AI is not going to be all that informative when not controlling for the situation-specific utility. In other words, I don’t think we have very good scientific evidence at this moment for telling when chatbots are a good use of one’s time. Perhaps that is why I’m approaching the topic from a place of intuition rather than doing a literature review.</p>
+</section>
+<section id="where-we-seem-to-be-heading-and-why-it-wont-work" class="level1">
+<h1>Where we seem to be heading and why it won’t work</h1>
+<p>I think because many of us now realize that 1) LLMs can be unreliable, 2) LLMs are very tempting to use to outsource cognitive effort and 3) Out-sourcing cognitive effort can undermine your own learning. Seemingly in response, different companies have implemented “Learning modes” that aim to address this imbalance. With these Socrates-style tutoring LLMs the idea is that the developer instructs the LLM to not offer answers, only hints and probing questions - like a teacher would. This is nice and good in that it clearly acknowledges the outlined problems and offers a solution. The issue is the solution is inspired by what humans do, not recognizing that LLMs are not people (first rung vs third rung). To elucidate, if you have ever interacted with these learning mode versions you’ll quickly realize how to work around the model’s instructions. Framed right, even the most rigorous learning mode LLM will not push-back if you are being lazy - something that a good teacher likely would not do. Of course you can still jailbreak prompt SocratesGPT, but what I am saying is actually more subtle, like asking for additional help that you would not have needed because you are feeling lazy. This represents another instance of counterfactual thought: “Would the student have solved the problem anyway, had I not helped?”. And so the uncritical use of a learning mode, while definitely an improvement, I still think can yield reduced productive struggle diminishing the learning as a result. At the same time, we can again recognize that the ability of the SocratesGPT to explain things in simpler terms, whether perfectly accurate or not, can be immensely useful - something the designers of these learning modes must have recognized when they developed these special system prompts.</p>
+<p>Thus, it is my claim LLMs make for bad teachers but decent explainers, even though both teachers and LLMs explain things. Having reduced teaching to explaining reveals how obviously flawed the comparison actually is, though seeing the push for AI in education it is likely this type of thinking contributed to “learning mode” in the first place. The key difference is that LLMs are statistical models, while teachers are not. For one, human teachers can flexibly reason about the intentionalityy of the student and decide to push back on the basis of what they know the student is capable of.</p>
+</section>
+<section id="lets-start-acknowledging-that-models-are-models-not-people" class="level1">
+<h1>Let’s start acknowledging that models are models, not people</h1>
+<p>Recognizing the differences between humans and LLMs is important for thinking about the appropriateness of a tool like an LLM, that seems to do a bit of everything. Knowing that LLMs are fundamentally associative/statistical, it’s easy to see why LLMs shine in helping to re-express things like is the case for tailored explanations, though with sometimes questionable accuracy. I actually think that LLMs can be genuinely helpful for learning new things. However, not really in the way that they would actually teach you the topic directly, like those learning modes, but rather in introducing you to jargon, and helping you rephrase your naive question in that jargon. By giving you the linguistic tools, the benefit is helping you overcome not knowing where to start your own research. It is essentially assistive technology for the autodidact in that it can give a direction to your curiosity rather than teach content. The generic suggestions of an LLM are definitely good enough for this purpose for getting started with a traditional deep dive where you otherwise would not have known what to put in the search bar. I think this is the real power of LLMs, recognizing they are incredibly large statistical models, meaning they have something to say on anything you throw at them, and that something they say hails from vast troves of real-world data. Recognizing that statistical knowledge is not the same as causal knowledge then is important to understand why an output from an LLM is a mere suggestion, not actually an answer. Just because the suggestions are often correct does not mean they come from a place of knowledge. If you understand this last statement, it should be clear that LLM outputs are best used as vague signals, not authoritative truths. That is why I think they are best used as what I would call a “deliberately generic suggestion engine”. A more cynical take would probably be to be more reductive, simply arguing that chatbots are for chatting, but I think this in effect denies that there is some utility in seeing a sample from a distribution of most likely outputs given the input. What I call deliberately generic suggestion puts much more emphasis on reading between the lines of outputs, where using an LLM really only serves as a jumping off point and a source of feedback.</p>
+<p>As such, using an LLM for deliberately generic suggestion might look something like this:</p>
+<ol type="1">
+<li>New topic I want to learn -&gt; consult LLM for jargon/technical term/first leads (unless I already have some leads)</li>
+<li>Jargon/leads -&gt; search engine for finding resources made by other humans</li>
+<li>Human-resources -&gt; LLM for additional explanation (if human explanation not sufficient)</li>
+</ol>
+<p>So from this it should be clear that the bulk of the learning actually comes from human-generated resources, because unlike the output of a statistical model, people frame information with communicative intent. The LLM assists in providing starting points and feedback when better resources are not available.</p>
+<p>I chose the term “deliberately generic suggestion” to make it less confusable to how many people use LLMs: as a tailored recommendation system. For example, if you take the idea of deliberately generic suggestion seriously, you wouldn’t ask an LLM for music suggestions or gift ideas. That is because the LLM is most useful when the suggestion you are looking for is specifically a generic one; like asking what technologies could be used to solve an engineering problem with x,y,z characteristics. It’s just giving you a starting point for when you don’t know where to start. Again, what’s key to understand is that we’re not actually taking the suggestions themselves at face value e.g.&nbsp;the specific technology suggested for our engineering problem. It really is just the starting point for the research we’ll do to figure out how we can solve the problem. Being a deliberately generic suggestion engine essentially means taking your input and re-expressing it in generic language for that setting. Tailored explanations in the teaching example are thus another version of deliberately generic suggestion - it’s rephrasing inputs to match a different setting. This makes LLMs useful as a kind of very flexible and fuzzy kind of auto-complete - a task well suited to a model of its nature. Viewing LLMs as some kind of fuzzy auto-complete probably appears less abstract than the idea of a deliberately generic suggestion, but I think it invites misunderstanding because I am not suggesting auto-complete like use, which is more about saving key-strokes than the suggestion of research leads.</p>
+</section>
+<section id="maybe-a-better-way" class="level1">
+<h1>Maybe a better way?</h1>
+<p>So is complete abstention desirable because of the risk that I jeopardize my learning? Perhaps not. For one, getting any feedback on your learning is going to be usually better than no feedback. The critical question is when this LLM feedback is actually worth it. I think the convenience of LLMs largely gets in the way of rationally answering this question, since from my previous argumentation it should be obvious that I think LLM use is most clearly a net-gain in the absence of better alternatives. This implies use as a last resort - completely counter to how many people use LLMs.</p>
+<p>If you buy my point that LLMs are best used for deliberately generic suggestion in the absence of better alternatives, and that the convenience of LLMs gets in the way of us actually using them this way, then it seems logical to me as a first remedy to really only use a model you can run on your device. Here’s why:</p>
+<ul>
+<li>Models that you can run on-device are naturally smaller, and thus “dumber”, meaning they will serve still serve their purpose as a last resort and a generic suggestion engine, while reducing how tempting they are as cognitive outsourcers.</li>
+<li>Using a model that you can run on your device means choosing a model that is publicly available, meaning it cannot be remotely enshittified with ads, usage limits, aggressive telemetry etc.; better enabling you to use and tailor the model in a genuinely productive way.</li>
+</ul>
+<p>If you want to use an LLM the way I have laid out here, you should definitely set the system prompt in a way that serves the ideas I have argued for:</p>
+<ul>
+<li>Emphasis on listing relevant resources and search queries (but without providing links)</li>
+<li>Demonstrating how naive prompts can be phrased in technical terminology</li>
+<li>Giving feedback and explaining things on request</li>
+<li>Clearly non-anthropomorphized, machine-like response style, no talking like a human (this helps avoid sycophantic responding that could turn out mis-leading)</li>
+</ul>
+<p>The problem with this remedy is that sometimes you’ll hit a wall, and even your self-hosted, last-resort generic suggestion LLM is not giving you anything that’s helpful. When that happens, one of course begins to wonder whether a more capable LLM would have been able to offer something to break through that wall. Of course, if the problem is that hard for you - should you be trying to solve it with an LLM in the first place? Probably it would be wiser to do some studying. But for now, let’s just recognize that if you’re in a rush to solve this difficult problem quickly, the temptation to go back to a commercial model advertised as being “PhD-level” is now greater than ever.</p>
+<p>Taking this inevitability into account, the new decision process for learning in the age of chatbots might look something like this:</p>
+<ol type="1">
+<li>(If needed) use LLM to get a generic overview of key terms and problems</li>
+<li>Use human content to to deep dive and get as far as you can</li>
+<li>Use self-hosted LLM for explanations if human explanations aren’t helping anymore</li>
+<li>Use a commercial LLM if you’re extremely stuck and out of options</li>
+</ol>
+<p>I believe this re-balances the incentive structure quite a bit towards learning over convenience. Key to this is recognizing that the LLM is only providing a suggestion, not and answer; internalizing that the output will be associated with the input rather than be causally linked, which is why the output can only be understood to be a generic suggestion.</p>
+<p>One might still flag the following:</p>
+<ul>
+<li>Addressing the tension between our self-hosted LLM and the commercial LLM incentivizes using the “best” model you can self-host to maximize 3) in favor of 4), and means ensuring that doing 4) is fairly inconvenient to do.</li>
+<li>Going through steps 1) and 2) still largely relies on you having the experience to recognize that this is the right procedure. When under time pressure, it’s still tempting to ignore 2)</li>
+<li>How do you know it’s time to move to the next rung down, versus keep trying at the current rung? Especially given that the next rung could solve the problem (though also potentially prevent you from forming your own original solution).</li>
+<li>The models are still general-purpose, meaning there is constant temptation to use them in ways that fall outside of deliberately generic suggestions</li>
+</ul>
+<p>But are these truly problematic? Since I am thinking about what the long-run effect could be I would say it depends, because those who want to thrive in a future where LLMs continue to exist would probably be wise to learn deeply rather than becoming a fleshy front-end to an LLM, and that means recognizing that sometimes good things take time. And so those who can recognize when an LLM is a distraction versus a genuine help will do better than those who do not. That being said, I think for most people, the presence of this technology is unfortunately a net negative, unless we work very hard to clear up the misunderstandings of what this technology should and should not be used for (a question of design, public ownership, and education). Furthermore, using LLMs only for deliberately generic suggestion will take some practice. Especially initially, using LLMs the way I have laid out will require significant self-awareness. I think this is probably a critical skill to foster in an age of automated convenience, where those in power (here, model owners) would like people to fall in line with the powerful’s interests (here, being LLM dependent and willing to pay any price). If you can recognize that using a LLM widely is largely inappropriate, you will most likely be able to accomplish this behavioral change. The current time is unique in that we are yet to fully grasp the costs and benefits, and that will surely change.</p>
+</section>
+<section id="parting-thoughts" class="level1">
+<h1>Parting thoughts</h1>
+<p>In conclusion, I don’t think it makes sense to completely deny yourself of LLMs, at least when your decision is driven by wanting to improve learning outcomes. This is because LLMs offer learning modalities that simply did not exist in that form beforehand, like being able to receive feedback in the absence of a teacher. At the same time, I have argued that LLMs are extremely two-sided, so that using them in a constructive, non-self jeopardizing way actually requires significant critical thinking. It is tempting to argue that one should simply abstain completely if there is such a significant accountability effort involved but I do believe this essentially amounts to denying oneself a set of learning opportunities that could have been if one was only able to overcome that initial or later hurdle. Key to what I estimate would amount to genuinely beneficial use of LLMs is an attitude that prioritizes human-generated information wherever possible, with a keen awareness for why these sources are preferable. Automated feedback is only sought in the absence of better alternatives. In the future, I would like to see models that are specifically designed to fill a role as deliberately generic suggestion engines rather than answer-givers, are more specialized towards certain topic areas, and keenly avoid anthropomorphization. I believe in the future, this will be given by smaller, specialized LLMs, fine-tuned by academics rather than private corporations. I look forward to evaluating whether what I laid out will come to be in the next few years, or alternatively see what I got wrong.</p>
+</section>
+<section id="recommended-reading" class="level1">
+<h1>Recommended reading</h1>
+<p>The ideas presented in this post are definitely inspired by:</p>
+<ul>
+<li>The Book of Why - Judea Pearl</li>
+<li>How to stay smart in a smart world - Gerd Gigerenzer</li>
+<li>Pluralistic - Cory Doctorow</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<div id="utterances-container"></div>
+
+<div id="utterances-container"></div>
+
+<script>
+class UtterancesThemeManager {
+  constructor() {
+    this.container = document.getElementById('utterances-container');
+    this.loaded = false;
+    this.init();
+  }
+
+  getTheme() {
+    const checks = [
+      () => document.body.classList.contains('quarto-dark'),
+      () => document.documentElement.classList.contains('quarto-dark'),
+      () => document.body.getAttribute('data-bs-theme') === 'dark',
+      () => document.documentElement.getAttribute('data-bs-theme') === 'dark',
+      () => document.body.classList.contains('dark'),
+      () => document.documentElement.classList.contains('dark')
+    ];
+
+    return checks.some(check => {
+      try { return check(); } catch { return false; }
+    }) ? 'dark' : 'light';
+  }
+
+  async waitForPageReady() {
+    return new Promise((resolve) => {
+      const checkReady = () => {
+        const conditions = [
+          document.readyState === 'complete',
+          document.body.offsetHeight > 0, 
+          window.getComputedStyle(document.body).backgroundColor !== '', 
+          !document.querySelector('link[rel="stylesheet"]:not([media="print"])') || 
+          Array.from(document.querySelectorAll('link[rel="stylesheet"]:not([media="print"])')).every(link => link.sheet)
+        ];
+
+        if (conditions.every(Boolean)) {
+          setTimeout(resolve, 200);
+        } else {
+          setTimeout(checkReady, 50);
+        }
+      };
+
+      checkReady();
+    });
+  }
+
+  async loadUtterances() {
+    if (this.loaded) return;
+
+    try {
+      await this.waitForPageReady();
+
+      let theme = this.getTheme();
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      const stableTheme = this.getTheme();
+      if (theme !== stableTheme) {
+        theme = stableTheme;
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      console.log('Loading Utterances with theme:', theme);
+
+      this.container.innerHTML = '';
+
+      const script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.setAttribute('repo', 'lukmayer/site_comments');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', theme === 'dark' ? 'github-dark' : 'github-light');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('async', '');
+
+      script.onload = () => {
+        this.loaded = true;
+        console.log('Utterances successfully loaded');
+      };
+
+      this.container.appendChild(script);
+
+    } catch (error) {
+      console.error('Error loading Utterances:', error);
+    }
+  }
+
+  updateTheme() {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const theme = this.getTheme();
+      const utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light';
+
+      try {
+        iframe.contentWindow.postMessage(
+          { type: 'set-theme', theme: utterancesTheme },
+          'https://utteranc.es'
+        );
+        console.log('Updated Utterances theme to:', theme);
+      } catch (e) {
+        console.warn('Failed to update Utterances theme:', e);
+      }
+    }
+  }
+
+  setupObservers() {
+    let updateTimeout;
+    const debouncedUpdate = () => {
+      clearTimeout(updateTimeout);
+      updateTimeout = setTimeout(() => this.updateTheme(), 150);
+    };
+
+    const observerConfig = {
+      attributes: true,
+      attributeFilter: ['class', 'data-bs-theme']
+    };
+
+    [document.body, document.documentElement].forEach(element => {
+      const observer = new MutationObserver(debouncedUpdate);
+      observer.observe(element, observerConfig);
+    });
+  }
+
+  init() {
+    this.setupObservers();
+
+    if (document.readyState === 'loading') {
+      window.addEventListener('load', () => {
+        setTimeout(() => this.loadUtterances(), 300);
+      });
+    } else {
+      setTimeout(() => this.loadUtterances(), 500);
+    }
+  }
+}
+
+new UtterancesThemeManager();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https://www.lukmayer.github.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lukmayer/website">
+      <i class="bi bi-code-slash" role="img" aria-label="Source code">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>Made with <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 24 24"><path fill="currentColor" d="M12.65 12.854V24c6.042-.325 10.923-5.105 11.33-11.125H12.65Zm-1.504 0H.02c.427 5.94 5.166 10.699 11.105 11.105V12.854Zm1.505-1.505H24C23.675 5.247 18.753.325 12.65 0Zm-1.505 0V0C5.106.427.326 5.308 0 11.35Z"></path></svg></p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="../../blog/index.xml">
+      <i class="bi bi-rss-fill" role="img" aria-label="Blog RSS feed">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

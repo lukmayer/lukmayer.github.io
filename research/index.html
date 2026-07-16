@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Lukas Mayer’s research in computational cognitive science, Human-AI collaboration.">
+
+<title>index – lukmayer.github.io</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/favicons/favicon.ico" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-highlight-style-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-highlight-style-dark-43b2d995d73a1754bd3a6f5d899fe64b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ba5660a1344d4ab7af1791413a0fd86b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-5c8ed7f938206a308555ded28a99db26.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publications .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-journal','listing-authors','listing-date','listing-image','listing-osf','listing-paper','listing-paragraph-header','listing-descriptive-paragraph',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      
+      searchColumns: ["listing-title","listing-journal","listing-authors","listing-date","listing-image","listing-osf","listing-paper","listing-paragraph-header","listing-descriptive-paragraph"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publications'] = new List('listing-publications', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<meta property="og:title" content="lukmayer.github.io">
+<meta property="og:description" content="Lukas Mayer’s research in computational cognitive science, Human-AI collaboration.">
+<meta property="og:image" content="https://lukmayer.github.io/research/assets/collab_ai.png">
+<meta property="og:site_name" content="lukmayer.github.io">
+<meta property="og:image:alt" content="Image for Human–AI collaboration: trade-offs between performance and preferences (2026)">
+<meta property="og:image:height" content="485">
+<meta property="og:image:width" content="805">
+<meta name="twitter:title" content="lukmayer.github.io">
+<meta name="twitter:description" content="Lukas Mayer’s research in computational cognitive science, Human-AI collaboration.">
+<meta name="twitter:image" content="https://lukmayer.github.io/research/assets/collab_ai.png">
+<meta name="twitter:image:alt" content="Image for Human–AI collaboration: trade-offs between performance and preferences (2026)">
+<meta name="twitter:image-height" content="485">
+<meta name="twitter:image-width" content="805">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lukmayer.github.io/research/">
+</head>
+
+<body class="floating nav-fixed fullcontent quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo light-content">
+    <img src="../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">lukmayer.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../now/index.html"> 
+<span class="menu-text">Now</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://lukmayer.github.io/login_portal/"> 
+<span class="menu-text">Login</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<div class="column-page-inset-left">
+<style>
+
+.listing-descriptive-paragraph {
+  transition: max-height 0.5s ease;
+  overflow: hidden; /* Helps in controlling the transition */
+}
+
+.button-link {
+  transition: transform 0.3s ease;
+}
+
+.button-link:hover {
+  transform: scale(1.1);
+}
+
+
+/* Remove bullet points from the list */
+.pub-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set the pub-item as a flex container with vertical centering */
+.pub-item {
+  display: flex;
+  gap: 20px;            
+}
+
+.responsive-pub-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+  border: 1px solid #333;
+  width: auto;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .responsive-pub-image {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-pub-image {
+    max-width: 95%;
+  }
+}
+
+
+/* Let the details container fill the remaining space */
+.pub-details {
+  flex: 1;
+}
+.highlight-author {
+  font-weight: bold;
+}
+
+.special-header {
+  font-weight: bold;
+}
+
+.listing-journal {
+  font-weight: italic;
+}
+
+
+.description {
+    display: none;
+}
+
+@media (max-width: 768px) {
+  .pub-item {
+    flex-direction: column;  
+    gap: 15px;               
+  }
+
+  /* Adjust the image container  */
+  .pub-image img {
+    max-width: 80%; 
+  }
+
+
+}
+
+.small-break {
+  line-height: 0.1;
+  font-size: 0.5em;
+}
+
+
+</style>
+<section id="projects" class="level1">
+<h1>Projects</h1>
+<section id="published" class="level2">
+<h2 class="anchored" data-anchor-id="published">Published</h2>
+<div id="listing-publications" class="quarto-listing quarto-listing-container-custom">
+
+<ul class="pub-list list">
+  
+    <li data-index="0" data-listing-date-sort="1772179200000">
+      <div class="callout callout-important" style="border: 1px solid #444; border-radius: 0px; overflow: hidden;">
+        <div class="callout-header" style="padding: 20px; border: none;">
+          <div class="callout-title-container" data-index="0" style="cursor: pointer;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+              <div style="flex: 1;">
+                <strong><em style="font-size: 1.5rem; line-height: 1.3;">
+                  "Human–AI collaboration: trade-offs between performance and preferences (2026)"
+                </em></strong>
+              </div>
+              <span class="toggle-arrow" style="color: #888; font-size: 1.2rem; margin-left: 15px;">▼</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+              <div style="flex: 1; min-width: 300px;">
+                
+                  <div style="margin-bottom: 8px; font-size: 1rem;">Mayer, L. W., Karny, S., Ayoub, J., Song, M., Tian, D., Moradi-Pari, E., &amp; Steyvers, M.</div>
+                
+                
+                  <div style="color: #888; font-style: italic;">Cognitive Research: Principles and Implications</div>
+                
+              </div>
+
+              
+                <div style="display: flex; gap: 10px; flex-shrink: 0;">
+                  
+                    <a href="https://osf.io/ybweq/?view_only=cb4d4c7ac0b848b79b6ae8c7b09278cc" class="research-btn research-btn-osf" target="_blank" rel="noopener noreferrer">OSF</a>
+                  
+                  
+                    <a href="https://link.springer.com/article/10.1186/s41235-026-00713-1" class="research-btn research-btn-paper" target="_blank" rel="noopener noreferrer">Link</a>
+                  
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-body-container" id="pub-0" style="display: none; border: none;">
+          
+            <div style="text-align: center; margin: 20px 0;">
+              <img src="assets/collab_ai.png" alt="Image for Human–AI collaboration: trade-offs between performance and preferences (2026)" class="responsive-pub-image">
+            </div>
+          
+
+          
+            <div style="margin: 20px; line-height: 1.6;">
+              
+                <h4 style="margin-bottom: 15px; font-size: 1.2rem;" class="anchored">How can we make AI collaborate well with people?</h4>
+              
+              
+                Narrowly optimizing the performance of AI agents may be convenient, but can cause frustration when people are then asked to work with this agent. In this paper, we show that people prefer AI agents that are considerate of their preferences, even when this comes at the cost of performance. We also find that certain human-centric design choices boost people's liking of the agent, without harming the performance of the human-AI team. Our results strongly suggest that leveraging both subjective and objective metrics is crucial when designing AI agents for human collaboration.
+              
+            </div>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li data-index="1" data-listing-date-sort="1737446400000">
+      <div class="callout callout-important" style="border: 1px solid #444; border-radius: 0px; overflow: hidden;">
+        <div class="callout-header" style="padding: 20px; border: none;">
+          <div class="callout-title-container" data-index="1" style="cursor: pointer;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+              <div style="flex: 1;">
+                <strong><em style="font-size: 1.5rem; line-height: 1.3;">
+                  "What large language models know and what people think they know (2025)"
+                </em></strong>
+              </div>
+              <span class="toggle-arrow" style="color: #888; font-size: 1.2rem; margin-left: 15px;">▼</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+              <div style="flex: 1; min-width: 300px;">
+                
+                  <div style="margin-bottom: 8px; font-size: 1rem;">Steyvers, M., Tejeda, H., Kumar, A., Belem, C., Karny, S., Hu, X., Mayer, L. W., &amp; Smyth, P.</div>
+                
+                
+                  <div style="color: #888; font-style: italic;">Nature Machine Intelligence</div>
+                
+              </div>
+
+              
+                <div style="display: flex; gap: 10px; flex-shrink: 0;">
+                  
+                    <a href="https://osf.io/y7pr6" class="research-btn research-btn-osf" target="_blank" rel="noopener noreferrer">OSF</a>
+                  
+                  
+                    <a href="https://www.nature.com/articles/s42256-024-00976-7" class="research-btn research-btn-paper" target="_blank" rel="noopener noreferrer">Link</a>
+                  
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-body-container" id="pub-1" style="display: none; border: none;">
+          
+            <div style="text-align: center; margin: 20px 0;">
+              <img src="images/confidence.png" alt="Image for What large language models know and what people think they know (2025)" class="responsive-pub-image">
+            </div>
+          
+
+          
+            <div style="margin: 20px; line-height: 1.6;">
+              
+                <h4 style="margin-bottom: 15px; font-size: 1.2rem;" class="anchored">Have you ever noticed that ChatGPT speaks like a know-it-all?</h4>
+              
+              
+                In this paper, we show that there is misalignment in the confidence LLM's are perceived to have in their answers, and what their internal confidence values reflect. In essence, LLM's routinely appear more confident than they should, despite model weights accurately reflecting the uncertainty associated with the answer. We also show how prompting LLM's to include appropriate uncertainty language in the answer text diminishes this gap between perceived and actual confidence considerably.
+              
+            </div>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li data-index="2" data-listing-date-sort="1721286000000">
+      <div class="callout callout-important" style="border: 1px solid #444; border-radius: 0px; overflow: hidden;">
+        <div class="callout-header" style="padding: 20px; border: none;">
+          <div class="callout-title-container" data-index="2" style="cursor: pointer;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+              <div style="flex: 1;">
+                <strong><em style="font-size: 1.5rem; line-height: 1.3;">
+                  "Learning with AI Assistance: A Path to Better Task Performance or Dependence? (2024)"
+                </em></strong>
+              </div>
+              <span class="toggle-arrow" style="color: #888; font-size: 1.2rem; margin-left: 15px;">▼</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+              <div style="flex: 1; min-width: 300px;">
+                
+                  <div style="margin-bottom: 8px; font-size: 1rem;">Karny, S., Mayer, L. W., Ayoub, J., Song, M., Su, H., Tian, D., Moradi-Pari, E., &amp; Steyvers, M.</div>
+                
+                
+                  <div style="color: #888; font-style: italic;">Proceedings of the ACM Collective Intelligence Conference</div>
+                
+              </div>
+
+              
+                <div style="display: flex; gap: 10px; flex-shrink: 0;">
+                  
+                  
+                    <a href="https://dl.acm.org/doi/pdf/10.1145/3643562.3672610" class="research-btn research-btn-paper" target="_blank" rel="noopener noreferrer">Link</a>
+                  
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-body-container" id="pub-2" style="display: none; border: none;">
+          
+            <div style="text-align: center; margin: 20px 0;">
+              <img src="images/assistance.png" alt="Image for Learning with AI Assistance: A Path to Better Task Performance or Dependence? (2024)" class="responsive-pub-image">
+            </div>
+          
+
+          
+            <div style="margin: 20px; line-height: 1.6;">
+              
+                <h4 style="margin-bottom: 15px; font-size: 1.2rem;" class="anchored">Is receiving AI assistance on tasks degrading our skills, or improving them?</h4>
+              
+              
+                To answer this question, we developed a gamified task in which participants needed to intercept moving, point-valued targets before they escape. During the game, an AI assistant suggests optimal actions to take to maximize player score. We manipulated when people were given this assistance to see whether its presence harmed or boosted their learning during the task. Despite many media fears of skill degradation and/or hopes of AI-boosted learning, we find that in our task, AI assistance neither harms nor enhances learning. This finding highlights the possibility that there exist a subset of tasks in which AI assistance can be provided risk-free, which we hypothesize may include many tasks that do not require higher-level reasoning.
+              
+            </div>
+          
+        </div>
+      </div>
+    </li>
+  
+    <li data-index="3" data-listing-date-sort="1758092400000">
+      <div class="callout callout-important" style="border: 1px solid #444; border-radius: 0px; overflow: hidden;">
+        <div class="callout-header" style="padding: 20px; border: none;">
+          <div class="callout-title-container" data-index="3" style="cursor: pointer;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 15px;">
+              <div style="flex: 1;">
+                <strong><em style="font-size: 1.5rem; line-height: 1.3;">
+                  "Optimeet: A computational tool to enhance participant attendance in group research (2025)"
+                </em></strong>
+              </div>
+              <span class="toggle-arrow" style="color: #888; font-size: 1.2rem; margin-left: 15px;">▼</span>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+              <div style="flex: 1; min-width: 300px;">
+                
+                  <div style="margin-bottom: 8px; font-size: 1rem;">Mayer, L. W., Bocheva, D., Hinds, J., Brown, O., Piwek, L., Ellis, D. A.</div>
+                
+                
+                  <div style="color: #888; font-style: italic;">Behavior Research Methods</div>
+                
+              </div>
+
+              
+                <div style="display: flex; gap: 10px; flex-shrink: 0;">
+                  
+                    <a href="https://osf.io/q9jy8" class="research-btn research-btn-osf" target="_blank" rel="noopener noreferrer">OSF</a>
+                  
+                  
+                    <a href="https://link.springer.com/article/10.3758/s13428-025-02745-9" class="research-btn research-btn-paper" target="_blank" rel="noopener noreferrer">Link</a>
+                  
+                  
+                </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="callout-body-container" id="pub-3" style="display: none; border: none;">
+          
+            <div style="text-align: center; margin: 20px 0;">
+              <img src="assets/sets.png" alt="Image for Optimeet: A computational tool to enhance participant attendance in group research (2025)" class="responsive-pub-image">
+            </div>
+          
+
+          
+            <div style="margin: 20px; line-height: 1.6;">
+              
+                <h4 style="margin-bottom: 15px; font-size: 1.2rem;" class="anchored">Do your studies rely on groups of people?</h4>
+              
+              
+                Recruiting participants for group sessions can be arduous, often costing a lot of time, effort, and resources. In this work, we demonstrate the complete lack of tools that can appropriately allocate a sample of interested participants to a set of group sessions. We then mathematically derive metrics that can quantify the effectiveness of any tool attempting to solve this problem. Finally, we develop an algorithm that outperforms any existing utility on this task using simulation and a large-scale pre-registered user study. Our scheduling utility is free and open-source, available to anyone through a web-applet.
+              
+            </div>
+          
+        </div>
+      </div>
+    </li>
+  
+</ul>
+
+<style>
+
+.research-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid;
+  transition: all 0.2s ease;
+}
+
+/* Light theme - brighter buttons */
+.research-btn-osf {
+  background-color: #adb5bd;
+  border-color: #adb5bd;
+  color: #000;
+}
+
+.research-btn-osf:hover {
+  background-color: #98a2ac;
+  border-color: #98a2ac;
+  color: #000;
+}
+
+.research-btn-paper {
+  background-color: #40e070;
+  border-color: #40e070;
+  color: #000;
+}
+
+.research-btn-paper:hover {
+  background-color: #2dd863;
+  border-color: #2dd863;
+  color: #000;
+}
+
+.research-btn-pdf {
+  background-color: #ff6b7a;
+  border-color: #ff6b7a;
+  color: #000;
+}
+
+.research-btn-pdf:hover {
+  background-color: #ff5167;
+  border-color: #ff5167;
+  color: #000;
+}
+
+/* Dark theme - darker buttons */
+.quarto-dark .research-btn-osf {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.quarto-dark .research-btn-osf:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
+  color: white;
+}
+
+.quarto-dark .research-btn-paper {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.quarto-dark .research-btn-paper:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+  color: white;
+}
+
+.quarto-dark .research-btn-pdf {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.quarto-dark .research-btn-pdf:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  color: white;
+}
+
+</style>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+<div class="text-center">
+<p><br>
+</p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><br class="small-break"> <i class="ai  ai-google-scholar ai-2xl" aria-label="google-scholar"></i> <a href="https://scholar.google.com/citations?user=KsH37lMAAAAJ">More on Google Scholar</a></p>
+</div><div class="column" style="width:50%;">
+<p><br class="small-break"> <i class="ai  ai-semantic-scholar ai-2xl" aria-label="semantic-scholar"></i> <a href="https://www.semanticscholar.org/author/Lukas-William-Mayer/2281033339">More on Semantic Scholar</a></p>
+</div>
+</div>
+<!-- end columns -->
+<hr>
+<p><br>
+</p>
+</div>
+<!-- end text-center -->
+<!-- ## Posters and Talks -->
+<!-- ::::: {.callout-important collapse="true" icon="false"} -->
+<!-- # ***"A Cognitive Framework for Strategic AI Communication"*** -->
+<!-- **Mayer, L. W.**, Steyvers, M. *CogSci 2025* -->
+<!-- ::: text-center -->
+<!-- <iframe src="assets/cogsci25_poster.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH&page=1" style="width: 90%; height: 1000px; border: none;"></iframe> -->
+<!-- ::: -->
+<!-- ::::: -->
+<!-- \ -->
+<!-- ## In Progress -->
+<!-- ::::: {.callout-important collapse="true" icon="false"} -->
+<!-- # ***"Human-AI Collaboration: Trade-offs Between Performance and Preferences"***  -->
+<!-- **Mayer, L. W.**, Karny, S., Ayoub, J., Song, M., Tian, D., Moradi-Pari, E., Steyvers, M. (under Review) *Cognitive Research: Principles and Implications* -->
+<!-- ::: text-center -->
+<!-- ![](assets/collab_ai.png) -->
+<!-- ::: -->
+<!-- \ -->
+<!-- **How can we make AI collaborate well with people?** Narrowly optimizing the performance of AI agents may be convenient, but can cause frustration when people are then asked to work with this agent. -->
+<!-- In this paper, we show that people prefer AI agents that are considerate of their preferences, even when this comes at the cost of performance. -->
+<!-- We also find that certain human-centric design choices boost people's liking of the agent, without harming the performance of the human-AI team. -->
+<!-- Our results strongly suggest that leveraging both subjective and objective metrics is crucial when designing AI agents for human collaboration. -->
+<!-- ::: text-center -->
+<!-- [OSF repository](https://osf.io/ybweq/?view_only=cb4d4c7ac0b848b79b6ae8c7b09278cc) -->
+<!-- ::: -->
+<!-- ::::: -->
+<!-- \ -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var myName = "Mayer, L. W.";
+  var authorElements = document.querySelectorAll('.authors-string');
+  var regex = new RegExp(myName, 'g');
+  authorElements.forEach(function(elem) {
+    elem.innerHTML = elem.innerHTML.replace(
+      regex,
+      '<span class="highlight-author">' + myName + '</span>'
+    );
+  });
+
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.callout-title-container').forEach(function(container) {
+    container.addEventListener('click', function() {
+      const index = this.getAttribute('data-index');
+      const element = document.getElementById('pub-' + index);
+      const arrow = this.querySelector('.toggle-arrow');
+
+      if (element.style.display === 'none') {
+        element.style.display = 'block';
+        arrow.innerHTML = '▲';
+      } else {
+        element.style.display = 'none';
+        arrow.innerHTML = '▼';
+      }
+    });
+  });
+});
+</script>
+<p><br>
+</p>
+</section>
+</section>
+<section id="research-interests" class="level1">
+<h1>Research Interests</h1>
+<p>At heart, I study human decision-making. I have a particular interest in using Cognitive Models as a means of specifying the causal processes that give rise to people’s choices. Human-AI collaboration has become an extremely convenient outlet for me in this regard. For one, contemporary AI technologies’ applications in the real world offer plenty inspiration for my research. For example, I’m interested in how people trade-off the costs of outsourcing effortful cognitive labor to a computational agent, and how far you can push the attributes of this agent before eliciting a behavioral shift in the participant. Moreover, because Cognitive Models are mathematical in nature, casting my research through a lens of human-AI collaboration has immediate practical implications as solutions to “misaligned” behaviors are more readily generated from formal explanations of human behavior. In my research, the “AI” primarily serves as a theoretical tool to ask questions like: «How would people behave if they had access to an agent with X, Y properties?». That being said, I have a definitive interest in demonstrating the applied value of my work, meaning that some of my projects go the extra length of combining psychological models with algorithms from AI research.</p>
+<p>The project that currently enjoys most of my attention intentionally pairs participants with an incredibly annoying to use “AI” assistant to understand how the timing of AI-induced interruptions influences the participant’s motivation to permanently disable this agent. With a causal model of people’s annoyance decisions integrated, our simulations show it should be possible to estimate policies for the AI assistant that avoid interrupting the participant at times where advice is unlikely to be appreciated. Such policies could lead to much more sustainable and productive collaboration.</p>
+<p><br>
+</p>
+</section>
+</div>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https://www.lukmayer.github.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lukmayer/website">
+      <i class="bi bi-code-slash" role="img" aria-label="Source code">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>Made with <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 24 24"><path fill="currentColor" d="M12.65 12.854V24c6.042-.325 10.923-5.105 11.33-11.125H12.65Zm-1.504 0H.02c.427 5.94 5.166 10.699 11.105 11.105V12.854Zm1.505-1.505H24C23.675 5.247 18.753.325 12.65 0Zm-1.505 0V0C5.106.427.326 5.308 0 11.35Z"></path></svg></p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="../blog/index.xml">
+      <i class="bi bi-rss-fill" role="img" aria-label="Blog RSS feed">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
