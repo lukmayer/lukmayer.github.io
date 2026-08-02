@@ -6,6 +6,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/posts/resourceful_computing.html",
       "/blog/posts/mozilla.html",
       "/blog/posts/insta_workaround.html",
       "/blog/posts/emacs2026.html",

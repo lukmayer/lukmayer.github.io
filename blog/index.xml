@@ -10,7 +10,36 @@
 <atom:link href="https://lukmayer.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Lukas Mayer&#39;s personal blog</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Mon, 15 Jun 2026 07:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 01 Aug 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Resourceful Computing</title>
+  <dc:creator>Luke </dc:creator>
+  <link>https://lukmayer.github.io/blog/posts/resourceful_computing.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+<p>One common finding in psychology that I have noticed in my own behavior as well is that when you make resource-consumption visible, it becomes much easier to change your behavior towards being less wasteful. Ever since I added a CPU and RAM usage indicator to my OS system bar, I have become very concerned about how much RAM different things use or whether my laptop fans are spinning more than what I am currently doing should reasonably justify. I noticed this as well with screen brightness. Most system bars don’t really have a setting to show current screen brightness level. When I started using waybar as my system bar, I noticed it’s an option. So I added the module. After a few weeks of seeing this information, I noticed that I developed a new habit: “Brightness at or below 20% = good”. I decided to lean into it, changing the CSS so that if brightness was above 20% the indicator would turn orange and eventually red, depending on how egregious the absolute level was. No-one will be surprised to read then, that my laptop’s battery started lasting much longer than before, since I had incentivized myself to keep my screen at the minimally viable brightness.</p>
+<p>Could you imagine how much electricity and data could be saved if all software was designed to be resource-conscious, both from a technical and UI perspective?</p>
+<p>There are a few different internet phenomena I have noticed over the years that make self-imposed resource constraints a core part of their identity. One common one a lot of people like is the idea of making websites as light as possible. The more extreme end of this is the <a href="https://1kb.club/">1kb club</a>, which is a list of websites whose only significance is that they provide their homepage using less than 1kb of data. This is not easy to achieve, and so all sites on these lists have an aggressively minimalistic aesthetic to them. It makes me wonder a bit about an alternative envisioning of the modern internet, maybe somewhat akin to how Richard Stallman likes to cast it, where maybe JavaScript basically doesn’t exist. It’s certainly a more eco-friendly alternative vision of the internet that would likely prioritize simple browsers and native clients over web-apps. Instead, we have an internet where the browser (or more specifically, it’s web-rendering engine) is an enormously complex everything program that more-or-less necessitates a mega corporation to develop and maintain (today: Webkit (Apple), Blink (Google) and Gecko (Mozilla), though Servo (Linux Foundation) and LibWeb (Ladybird Browser Initiative) are in development). If you’re curious about assessing the footprint of your website, you can use sites like <a href="https://www.debugbear.com/test/website-speed">https://www.debugbear.com/test/website-speed</a>. Unfortunately, my home page currently weighs a bit over 1Mb, placing me 3 orders of magnitude away from 1kb club stardom.</p>
+<p>Another very niche manifestation of aggressively managing some resource is “<a href="https://suckless.org/philosophy/">suckless software</a>”, which is well-known for trying to achieve fully-functional programs that meet fairly arbitrary constraints like limiting themselves to 1000 lines of code. This pursuit leads to some weird outcomes, like making certain features available as “patches” that the user needs to manually recompile the program with to make available. It’s fair to say that it takes a very special (read: Gentoo user) type of user to live this life. A slightly less dogmatic and more common version of this can be seen with many developers preferring plain-text interfaces over complex GUI software. I am technically part of this camp, having figured out how to do most of my computing via a web of terminal programs that interface to Emacs. Another, arguably slightly more common such workflow is one based around extensive use of the terminal, such is common with Neovim users. Thinking even more broadly, we commonly see this logic in the “This meeting could have been an e-mail” phenomenon that most people will have some familiarity with. Here, instead of compute or memory, the concern is the wasteful use of people’s time. Some food for thought. The well-known book “Algorithms to live by” also discusses the psychology of “<a href="https://kb.srht.site/notes/computational-kindness.html">computational kindness</a>”, with what I took away from it basically boiling down to communicating in a way that is considerate of the other person’s cognitive resources.</p>
+<p>Moving back to computing, I will finish this post with one recent example of tinkering with my resource-use habits. I recently replaced my phone with a Google Pixel 10A. One thing that is nice with this device is that it will receive software support until 2033. That is a long time. Naturally, I would like to use this phone as long as possible, and so I spent some time thinking about how I can optimize battery health. Looking at my operating system’s battery usage statistics, I noticed that the main driver of electricity usage was simple network connectivity. I’m not exactly a heavy phone-user, and have access to Wi-Fi probably close to 95% of the time in my daily life. So I asked myself, somewhat controversially, whether I could make it a habit to have my phone in Airplane mode unless otherwise needed. To help me, I downloaded an app from the F-droid store called Automation, and set it up to push a notification reminding me to turn Airplane mode back on as soon as Airplane mode is turned off.</p>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>I similarly have an app from F-droid called Auto Off Bluetooth, that simply automatically toggles Bluetooth off if it isn’t being used.</p>
+</div></div><p>When I explain to people that I use my phone in Airplane mode by default and struggle to use 1GB of mobile data over the course of a month, the reaction is always one of disbelief. I admit, it’s a slightly spicy habit to have that can be inconvenient. It really puts the onus on you to choose your level of distraction. If I am on the move (so without Wi-Fi), I technically have to consider the joint probability that someone will try to call me, and that that call could be important enough to answer, so that I can deliberately turn off Airplane mode. Not a trade-off that most people will find acceptable, but one that works fine with my life as a lowly PhD student.</p>
+
+
+
+ ]]></description>
+  <category>random</category>
+  <guid>https://lukmayer.github.io/blog/posts/resourceful_computing.html</guid>
+  <pubDate>Sat, 01 Aug 2026 07:00:00 GMT</pubDate>
+  <media:content url="https://lukmayer.github.io/blog/posts/images/minecraft_head.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Entering the Mozillaverse</title>
   <dc:creator>Luke </dc:creator>
@@ -69,6 +98,19 @@
 
 
 
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Disclaimer
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This method is not as reliable as I initially thought - you will get Captcha’d eventually.</p>
+</div>
+</div>
 <p>Instagram is one of those platforms that’s really hard to avoid if you want to stay in touch with a group or a small business. At the same time, Instagram is quite aggressive in it’s use of dark patterns. For example, you can only sometimes view public profiles without logging in, and are usually limited to viewing one or two posts before being compelled to log in.</p>
 <p>This is obviously pretty user-hostile. Why would logging in be required to view a profile that is supposedly public? For a long time, my gut reaction to these kind of lock-in attempts has been to immediately discard whatever the page was that caught my interest. Kind of along the lines of “If [page] doesn’t have RSS feeds, it’s probably not something I want to support anyway”. Indeed, Instagram does not have RSS feeds, although it apparently used to.</p>
 <p>My attitude to resisting surveillance capitalism hasn’t changed. What has changed, is that I have become a lot more technically capable. There are some student groups I am interested in, and most of them seem to use Instagram as their main platform. I figured there must be some way I can stay up to date without signing up for an account.</p>
@@ -4544,37 +4586,6 @@ font-style: inherit;"> ../../_includes/utterances.html</span></span></code></pre
   <guid>https://lukmayer.github.io/blog/posts/utterance_theme.html</guid>
   <pubDate>Sun, 15 Jun 2025 07:00:00 GMT</pubDate>
   <media:content url="https://lukmayer.github.io/blog/posts/images/light_and_dark.png" medium="image" type="image/png" height="104" width="144"/>
-</item>
-<item>
-  <title>Is it even possible to avoid big-tech?</title>
-  <dc:creator>Luke </dc:creator>
-  <link>https://lukmayer.github.io/blog/posts/sticky_tech.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-<p>Have you ever had a thought that goes something like “Do I really need &lt;something&gt;”? I definitely have. Over the years, I have done some silly multi-week experiments to assess things like: what would it be like to sleep without a pillow, live without a mirror, work without a chair. Why? Just to challenge my habits, I think.</p>
-<p>Currently, I guess I have two experiments going on: growing my hair out fairly long, and doing without “big-tech”. Obviously, the latter one is what this post is about.</p>
-<p>The motivation for this experiment goes something like: Why does everyone use the same software? If you think about it, for PC operating systems you get a choice of macOS (Apple), Windows (Microsoft); for phones you get iOS (Apple), and Android (Google); for apps, it’s either Apple’s App Store, or the Google Play Store; for browsers you only really get Chrome (Google) with Google as the search engine. Most normal people either use Google Drive or OneDrive (Microsoft). Productivity apps either come in the form of Microsoft 365 or Google’s App suite. For E-mail everyone has a Gmail account and most will also have an Outlook (Microsoft). Messaging is done on either iMessage (Apple), WhatsApp (Meta), Messenger (Meta, again). Social media is mostly stuff owned by Meta, with LinkedIn owned by Microsoft. There’s probably more one could add to the list… The point is, is it really necessary to operate in a tech ecosystem where every niche seems to be some kind of de facto mono/duo/oligopoly<sup>1</sup> involving a random choice from the same four (-ish) companies?</p>
-<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;I write “de facto” because determining the monopoly status of these companies is evidently quite difficult under current competition law.</p></div></div><p>I didn’t know I was going to embark on this experiment at the time, but technically my journey started by wondering if Chrome was really serving me all that well. I remember finding Google products frustrating because they never really offered any settings to tweak. Of particular annoyance to me at the time was that many Google products lacked a dark mode setting. Sometimes the settings page of these apps felt more like an empty placeholder accidentally left in rather than the polished product of some billion-dollar company. Why was Google assuming that all of their billions of users used their products exactly the same way? I wasn’t that committed to using Chrome, so I shopped around. My initial browser switch was to Opera, which was pretty customizable compared to Chrome then (still is).</p>
-<p>Microsoft products were typically much more customizable than Google’s offerings, so for a while I considered myself a Microsoft fan. Besides Windows, I was using Outlook, OneNote, Word, Excel, PowerPoint, OneDrive, even their dedicated To-Do app and Android Launcher. That only really started to change when Windows 11 rolled out, where seemingly all options had been stripped away, with annoyances now impossible to turn off. It drove me nuts, so I decided to try Ubuntu. Linux definitely is something one needs to get used to because it can uproot so much of an average person’s software stack. However, once I adjusted I never felt it worth going back. Thankfully, most things are web-based nowadays, so as long as you have a browser a normal person can be just fine.</p>
-<p>These days, I really only have a few things left that have proven very sticky. For some things, my hands are simply tied. For example, my university compels me to use Gmail and Microsoft Teams for my work. If it wasn’t for that my only use of Google products would be Google Voice because I have a VoIP number that I don’t want to pay monthly for, and the Google Play Store because commercial apps are not put anywhere else. As a partial remedy, I generally use F-droid wherever I can or just use services on Desktop (where there usually is much more choice) instead of my phone. Social media is also surprisingly sticky; I still don’t find myself able to delete WhatsApp because it’s so ubiquitous in Europe and I also technically still have a LinkedIn account<sup>2</sup>.</p>
-<div class="no-row-height column-margin column-container"><div id="fn2"><p><sup>2</sup>&nbsp;I think I have a vague sense of it potentially being helpful for a future job search. Although I can’t say I have ever found a job through LinkedIn.</p></div></div><p>There is also stuff that I could do without but have not touched yet. I use Google Scholar and GitHub (Microsoft) pretty regularly, this very website is currently hosted on GitHub. My research data goes to a Google Firebase database. I think I am just a bit ignorant about alternatives when it comes to these. Give me a few more weeks, and perhaps I’ll have switched these too or at least have a good reason for why not.</p>
-<p>So is it still possible to go without big-tech? You can avoid large parts of the big-tech ecosystem, but only with some notable caveats, so the short answer is no. For one, it took me the better part of 3 years to slowly transition away as much as I could, bit by bit. I think switching E-mails nicely paints the problem. You are free to choose any E-mail service you like, but if you have a Gmail you can use it to log in to all kinds of services, and as you start using this Gmail to register for various things, it becomes more and more effortful to move all of those things to a different, non-Gmail account. In other words, it takes a serious, prolonged effort to abstain from big-tech services. And even if you have the will, chances are someone else will still compel you to use some big-tech provisioned services. It was only a few months ago where an academic journal obliged me to use <strong><em>Premium</em></strong> Adobe Acrobat Reader to fill out a form that was so bare-bones it could just as well have been a simple text file. I should also mention that some of the stuff I ended up using is still heavily dependent on big tech. For example, most browsers are built on the Chromium open source project, managed by Google<sup>3</sup>.</p>
-<div class="no-row-height column-margin column-container"><div id="fn3"><p><sup>3</sup>&nbsp;Similarly, Android alternatives are typically made from Google’s Android Open Source Project.</p></div></div><p>Is abstaining even worth it? In some ways, maybe yes. I pay fewer subscriptions than I used to. I don’t have to buy “premium” products that lock me into an ecosystem and I don’t have to deal with ads or other “features” being shoved down my throat. In other ways, for many people, not really. For example, Linux undeniably has some jankiness that makes it hard(er) to use in many everyday settings than other operating systems. I don’t see myself going back though because I value the freedom to set it up to whatever I like highly and don’t mind occasional use of the terminal.</p>
-<p>I wonder what these things will be like in 10–20 years? Will it be yet more of the same with additional domains monopolized, will big companies maybe have been split up in a way that is actually productive for sustained competition, or will some kind of massive libre software revolution suddenly materialize out of thin air? On the one hand, I get the sense that software is more vulnerable to de facto monopolies compared to industries that operate in the material world<sup>4</sup>, so I do think this phenomenon of specific niches being utterly dominated by one or two big companies is unlikely to go away completely. On the other hand, it does also feel like more and more people are holding views according to which some types of software should be considered public goods and managed as such. It will definitely be interesting to see which path we end up going down.</p>
-
-
-<div class="no-row-height column-margin column-container"><div id="fn4"><p><sup>4</sup>&nbsp;Because of increased potential to benefit from virality, popularity- and network effects.</p></div></div>
-
- ]]></description>
-  <category>software</category>
-  <guid>https://lukmayer.github.io/blog/posts/sticky_tech.html</guid>
-  <pubDate>Sun, 18 May 2025 07:00:00 GMT</pubDate>
-  <media:content url="https://lukmayer.github.io/blog/posts/images/big_tech.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 </channel>
 </rss>
