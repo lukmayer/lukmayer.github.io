@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Luke">
+<meta name="dcterms.date" content="2026-08-22">
+<meta name="description" content="Alternative app stores are awesome">
+
+<title>My favorite free &amp; open-source apps from F-droid – lukmayer.github.io</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicons/favicon.ico" rel="icon">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-highlight-style-4e5466e430b1db38349d513585fd1d59.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-highlight-style-dark-43b2d995d73a1754bd3a6f5d899fe64b.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f01f041d37a6a52b30ab646ad9ff7256.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-9d625de15e35d1f6d36e6e7b156cc2b2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="My favorite free &amp; open-source apps from F-droid – lukmayer.github.io">
+<meta property="og:description" content="Alternative app stores are awesome">
+<meta property="og:image" content="https://lukmayer.github.io/blog/posts/images/fdroid.png">
+<meta property="og:site_name" content="lukmayer.github.io">
+<meta property="og:image:height" content="270">
+<meta property="og:image:width" content="270">
+<meta name="twitter:title" content="My favorite free &amp; open-source apps from F-droid – lukmayer.github.io">
+<meta name="twitter:description" content="Alternative app stores are awesome">
+<meta name="twitter:image" content="https://lukmayer.github.io/blog/posts/images/fdroid.png">
+<meta name="twitter:image-height" content="270">
+<meta name="twitter:image-width" content="270">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://lukmayer.github.io/blog/posts/fdroid_apps.html">
+</head>
+
+<body class="floating nav-fixed quarto-dark"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = true;
+    const queryPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    const darkModeDefault = queryPrefersDark.matches;
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    queryPrefersDark.addEventListener("change", e => {
+      if(window.localStorage.getItem("quarto-color-scheme") !== null)
+        return;
+      const alternate = e.matches
+      toggleColorMode(alternate);
+      localAlternateSentinel = e.matches ? 'alternate' : 'default'; // this is used alongside local storage!
+      toggleGiscusIfUsed(alternate, darkModeDefault);
+    });
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo light-content">
+    <img src="../../assets/favicons/android-chrome-192x192.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">lukmayer.github.io</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/index.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../now/index.html"> 
+<span class="menu-text">Now</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://lukmayer.github.io/login_portal/"> 
+<span class="menu-text">Login</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">My favorite free &amp; open-source apps from F-droid</h1>
+                  <div>
+        <div class="description">
+          Alternative app stores are awesome
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">phone</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Luke </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 22, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="4">
+    <h2 id="toc-title">Sections:</h2>
+   
+  <ul>
+  <li><a href="#rethink-dns-ad-block" id="toc-rethink-dns-ad-block" class="nav-link active" data-scroll-target="#rethink-dns-ad-block">Rethink DNS (Ad-block)</a></li>
+  <li><a href="#kvaesitso-launcher" id="toc-kvaesitso-launcher" class="nav-link" data-scroll-target="#kvaesitso-launcher">Kvaesitso (Launcher)</a></li>
+  <li><a href="#heliboard-keyboard" id="toc-heliboard-keyboard" class="nav-link" data-scroll-target="#heliboard-keyboard">Heliboard (Keyboard)</a></li>
+  <li><a href="#davx5-syncthing-fork-file-utilities" id="toc-davx5-syncthing-fork-file-utilities" class="nav-link" data-scroll-target="#davx5-syncthing-fork-file-utilities">Davx5, Syncthing-Fork (File utilities)</a></li>
+  <li><a href="#orgzly-a-must-for-emacs-users" id="toc-orgzly-a-must-for-emacs-users" class="nav-link" data-scroll-target="#orgzly-a-must-for-emacs-users">Orgzly (A must for Emacs users)</a></li>
+  <li><a href="#weblibre-browser" id="toc-weblibre-browser" class="nav-link" data-scroll-target="#weblibre-browser">WebLibre (browser)</a></li>
+  <li><a href="#other-worthy-mentions" id="toc-other-worthy-mentions" class="nav-link" data-scroll-target="#other-worthy-mentions">Other worthy mentions</a></li>
+  <li><a href="#what-i-really-miss-on-f-droid" id="toc-what-i-really-miss-on-f-droid" class="nav-link" data-scroll-target="#what-i-really-miss-on-f-droid">What I really miss on F-droid</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+<p>One joy of using an Android-derived operating system is the ability to have multiple different app stores installed (though it is becoming increasingly difficult to do). In my case, I have Google Play Store and the F-droid store on my Pixel 10A, which runs GrapheneOS. While the Play Store is standard and houses all commercial apps, the F-droid store is specifically for free and open-source apps. Over the years, I have found myself checking more and more whether the F-droid store has an app that does the thing I need before going to the Play Store, at least partially because commercial apps are often full of premium features, ads, or other nagging, whereas most f-droid apps do not even attempt to remind you that you could donate money to support the developer. After all, these apps are usually someone’s personal/hobby project, not something they want to make a living from. Other times, the app will be available both on the Play Store and on F-droid, where the Play Store version will cost some money, while the F-droid version is free of charge. So in today’s post I’ll simply document what apps from F-droid I have installed that have really grown on me.</p>
+<section id="rethink-dns-ad-block" class="level2">
+<h2 class="anchored" data-anchor-id="rethink-dns-ad-block"><a href="https://f-droid.org/packages/com.celzero.bravedns/">Rethink DNS</a> (Ad-block)</h2>
+<p>Rethink DNS is an “Android Firewall”, which in this case means a DNS resolver that can be set up as a VPN connection and customized. That sounds abstract and complex, but my use for it is much more akin to a system-wide ad-blocker. Essentially, by setting up this app as the VPN connection on your phone, you allow it to monitor network trafficking. This in turn enables you to use the app to block whatever traffic you want by downloading/configuring block lists. This is awesome for blocking ads and trackers! I use quite aggressive filters, and so sometimes an a website may break. Luckily, the app lets you have a persistent notification which you can use to temporarily disable the firewall. In other words, when my ad-block breaks something, it only takes a tap and a page reload to fix it. This app has become essential for me since I still use a few apps from the Google Play store that will push ads unless you pay.</p>
+</section>
+<section id="kvaesitso-launcher" class="level2">
+<h2 class="anchored" data-anchor-id="kvaesitso-launcher"><a href="https://f-droid.org/en/packages/de.mm20.launcher2.release/">Kvaesitso</a> (Launcher)</h2>
+<p>On Android-like operating systems, you can choose a “Launcher” app of your liking, which basically controls the look and feel of your phone. I’ve written multiple times before that I like a pretty minimalistic setup, where the home screen is comprised of only my calendar and todo-list widget, with everything else stowed away somewhere.</p>
+<p>The Kvaesitso launcher is hands-down my favorite launcher app. Besides being completely free, it has an amazing, extremely well designed search field that does way more than just searching the apps you have installed. If you type 3+3 it will show you the result, if you type “30 min” it will show a button to start a timer, if you type 30 lb it will show you what that is in other units, like kilogram, if you type 30 USD it will show you the currency conversion for other common currencies like euros, etc. The power of this search alone saves you a lot of web-searches you’d otherwise have to do.</p>
+<p>You can even set up a search engine of your choosing so that if you type a query that’s not obviously an app it will search the web instead. Where this becomes very powerful is if you set the search engine to be one that supports bangs, so that you can go straight to the results of another website. So for example, if I type <code>!!yt cat videos</code>, Kvaesitso will jump straight to my browser, open youtube.com and search for cat videos there. Once you are used to using bangs like this, it is really hard to go back.</p>
+</section>
+<section id="heliboard-keyboard" class="level2">
+<h2 class="anchored" data-anchor-id="heliboard-keyboard"><a href="https://f-droid.org/en/packages/helium314.keyboard/">Heliboard</a> (Keyboard)</h2>
+<p>Heliboard is just a nice, well-designed keyboard that is highly customizable. You can set a custom voice-to-text service, it has a lot of handy settings for common or otherwise useful gestures, and it has a toolbar that you can pin buttons to. So for example, on my toolbar, I have buttons for selecting text, moving between words or characters, copy and paste, and voice to text. I find that using these buttons is often faster than having to do one of these drag and drop gestures, for example to move the text cursor one character to the left.</p>
+</section>
+<section id="davx5-syncthing-fork-file-utilities" class="level2">
+<h2 class="anchored" data-anchor-id="davx5-syncthing-fork-file-utilities"><a href="https://f-droid.org/en/packages/at.bitfire.davdroid/">Davx5</a>, <a href="https://f-droid.org/en/packages/com.github.catfriend1.syncthingfork/">Syncthing-Fork</a> (File utilities)</h2>
+<p>These two apps are of the type where they cost money on the Play Store but are freely available on F-droid. Davx5 is simply a way to sync a web calendar to your phone. For example, if you wanted to use your Google Calendar on an arbitrary calendar apps that is not from Google or maybe doesn’t support Google sign-in, then Davx5 will simply act as the interface. You connect your web calendar to it, and it basically makes sure that your phone can ‘see’ the calendar locally. Of course, this is nice because now you can use any calendar provider you like with any calendar app you want, so long as they support the CalDAV standard, which is very common.</p>
+<p>Syncthing is a service for peer-to-peer file-sharing. This basically just means that you can synchronise files between devices without needing a server. When you use something like Google Drive or any other Cloud-based backup service, your files get sent to the server of the Cloud provider, and your devices then access the files by contacting the server. With Syncthing, you simply clone the file to each device, and send updates over the internet if one of the clones changes, so that all clones are always identical. This is extremely useful! Because of Syncthing, my phone basically has most of the files on my computer, so if something where to happen to my laptop, I’d actually not lose any work. That being said, I still use a paid cloud-service (Proton-drive) just to be extra secure.</p>
+</section>
+<section id="orgzly-a-must-for-emacs-users" class="level2">
+<h2 class="anchored" data-anchor-id="orgzly-a-must-for-emacs-users"><a href="https://f-droid.org/en/packages/com.orgzlyrevived/">Orgzly</a> (A must for Emacs users)</h2>
+<p>I use the Emacs text editor for almost everything in my computing life. On my laptop, it’s my terminal, my calendar, my to-do list, my code editor, my email-client, my feed-reader, and the main way I interface with music and video. I concede that this is a pretty opinionated way to use a computer, perhaps even slightly radical, but I enjoy it. Of course, if you have all of these things in Emacs, you will likely need some way to access this stuff on your phone too. While CalDAV will be helpful for the calendar (I have a web-calendar that Emacs pulls from and writes to), but for interacting with my to-do list, which is comprised of Org documents, you’ll need something that understands Org. That is why I use Orgzly. I specifically use it to capture thoughts on the to-do list widget, which will write to a file called inbox.org that Syncthing will push to my laptop, and to edit my workout tracker while at the gym. Orgzly will interpret Schedule tags, so if it’s reading an Org file that has such a timestamp, it can push a reminder on your phone. That is to say, it works wonderfully as a to-do app that speaks Org.</p>
+</section>
+<section id="weblibre-browser" class="level2">
+<h2 class="anchored" data-anchor-id="weblibre-browser"><a href="https://f-droid.org/en/packages/eu.weblibre.gecko/">WebLibre</a> (browser)</h2>
+<p>Weblibre is a relatively new browser that uses Mozilla’s web rendering engine. What I like most about it is that it is highly customizable, unlike all Firefox-derived Android browsers that I have tried. It supports extensions and overall is very well designed. Again, it’s still a new project, so you might run into some bugs using it.</p>
+</section>
+<section id="other-worthy-mentions" class="level2">
+<h2 class="anchored" data-anchor-id="other-worthy-mentions">Other worthy mentions</h2>
+<ul>
+<li><p><a href="https://f-droid.org/en/packages/net.thunderbird.android/">Thunderbird</a> is a great multi-account email-client developed by Mozilla.</p></li>
+<li><p><a href="https://f-droid.org/en/packages/com.jens.automation2/">Automation</a> is a handy, open-source app similar to the more well-known app Tasker. It let’s you automate certain actions on your phone. For example, I use it to push a notification reminding me to turn Airplane mode on as soon as I turn it off. Some features require root access.</p></li>
+<li><p><a href="https://f-droid.org/en/packages/com.looker.droidify/">Droid-ify</a> is a neat front-end for the F-droid store. It’s basically an app on the F-droid store that provides a better interface for the F-droid store (my opinion)</p></li>
+<li><p><a href="https://f-droid.org/en/packages/com.foobnix.pro.pdf.reader/">Librera FD</a> is simply an e-book reader. It’s highly customizable and so can be configured to most people’s tastes.</p></li>
+</ul>
+</section>
+<section id="what-i-really-miss-on-f-droid" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-really-miss-on-f-droid">What I really miss on F-droid</h2>
+<p>You’d think the F-droid store would have great calendar apps. Unfortunately, none currently meet my standards. All I need from a calendar app is a widget that makes it easy to see my schedule graphically. I dislike agenda-view, which is the one thing every calendar app seems to provide a widget for. Literally all I want is week-view as a widget. I still use Business Calendar 2 from Google Play because of this. If I had unlimited time, I’d make my own calendar app…</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<div id="utterances-container"></div>
+
+<div id="utterances-container"></div>
+
+<script>
+class UtterancesThemeManager {
+  constructor() {
+    this.container = document.getElementById('utterances-container');
+    this.loaded = false;
+    this.init();
+  }
+
+  getTheme() {
+    const checks = [
+      () => document.body.classList.contains('quarto-dark'),
+      () => document.documentElement.classList.contains('quarto-dark'),
+      () => document.body.getAttribute('data-bs-theme') === 'dark',
+      () => document.documentElement.getAttribute('data-bs-theme') === 'dark',
+      () => document.body.classList.contains('dark'),
+      () => document.documentElement.classList.contains('dark')
+    ];
+
+    return checks.some(check => {
+      try { return check(); } catch { return false; }
+    }) ? 'dark' : 'light';
+  }
+
+  async waitForPageReady() {
+    return new Promise((resolve) => {
+      const checkReady = () => {
+        const conditions = [
+          document.readyState === 'complete',
+          document.body.offsetHeight > 0, 
+          window.getComputedStyle(document.body).backgroundColor !== '', 
+          !document.querySelector('link[rel="stylesheet"]:not([media="print"])') || 
+          Array.from(document.querySelectorAll('link[rel="stylesheet"]:not([media="print"])')).every(link => link.sheet)
+        ];
+
+        if (conditions.every(Boolean)) {
+          setTimeout(resolve, 200);
+        } else {
+          setTimeout(checkReady, 50);
+        }
+      };
+
+      checkReady();
+    });
+  }
+
+  async loadUtterances() {
+    if (this.loaded) return;
+
+    try {
+      await this.waitForPageReady();
+
+      let theme = this.getTheme();
+      await new Promise(resolve => setTimeout(resolve, 100));
+
+      const stableTheme = this.getTheme();
+      if (theme !== stableTheme) {
+        theme = stableTheme;
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
+
+      console.log('Loading Utterances with theme:', theme);
+
+      this.container.innerHTML = '';
+
+      const script = document.createElement('script');
+      script.src = 'https://utteranc.es/client.js';
+      script.setAttribute('repo', 'lukmayer/site_comments');
+      script.setAttribute('issue-term', 'pathname');
+      script.setAttribute('theme', theme === 'dark' ? 'github-dark' : 'github-light');
+      script.setAttribute('crossorigin', 'anonymous');
+      script.setAttribute('async', '');
+
+      script.onload = () => {
+        this.loaded = true;
+        console.log('Utterances successfully loaded');
+      };
+
+      this.container.appendChild(script);
+
+    } catch (error) {
+      console.error('Error loading Utterances:', error);
+    }
+  }
+
+  updateTheme() {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const theme = this.getTheme();
+      const utterancesTheme = theme === 'dark' ? 'github-dark' : 'github-light';
+
+      try {
+        iframe.contentWindow.postMessage(
+          { type: 'set-theme', theme: utterancesTheme },
+          'https://utteranc.es'
+        );
+        console.log('Updated Utterances theme to:', theme);
+      } catch (e) {
+        console.warn('Failed to update Utterances theme:', e);
+      }
+    }
+  }
+
+  setupObservers() {
+    let updateTimeout;
+    const debouncedUpdate = () => {
+      clearTimeout(updateTimeout);
+      updateTimeout = setTimeout(() => this.updateTheme(), 150);
+    };
+
+    const observerConfig = {
+      attributes: true,
+      attributeFilter: ['class', 'data-bs-theme']
+    };
+
+    [document.body, document.documentElement].forEach(element => {
+      const observer = new MutationObserver(debouncedUpdate);
+      observer.observe(element, observerConfig);
+    });
+  }
+
+  init() {
+    this.setupObservers();
+
+    if (document.readyState === 'loading') {
+      window.addEventListener('load', () => {
+        setTimeout(() => this.loadUtterances(), 300);
+      });
+    } else {
+      setTimeout(() => this.loadUtterances(), 500);
+    }
+  }
+}
+
+new UtterancesThemeManager();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https://www.lukmayer.github.io");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/lukmayer/website">
+      <i class="bi bi-code-slash" role="img" aria-label="Source code">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://quarto.org">
+<p>Made with <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 24 24"><path fill="currentColor" d="M12.65 12.854V24c6.042-.325 10.923-5.105 11.33-11.125H12.65Zm-1.504 0H.02c.427 5.94 5.166 10.699 11.105 11.105V12.854Zm1.505-1.505H24C23.675 5.247 18.753.325 12.65 0Zm-1.505 0V0C5.106.427.326 5.308 0 11.35Z"></path></svg></p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="../../blog/index.xml">
+      <i class="bi bi-rss-fill" role="img" aria-label="Blog RSS feed">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
